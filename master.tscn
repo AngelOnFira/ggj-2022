@@ -25,20 +25,23 @@ offset_right = 1024.0
 offset_bottom = 200.0
 
 [node name="CardSlots" type="HBoxContainer" parent="VBoxContainer"]
+offset_left = 410.0
 offset_top = 204.0
-offset_right = 1024.0
+offset_right = 614.0
 offset_bottom = 304.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="CardSlot" parent="VBoxContainer/CardSlots" instance=ExtResource( "2_v2tt0" )]
+[node name="EvilSlot" parent="VBoxContainer/CardSlots" instance=ExtResource( "2_v2tt0" )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 offset_right = 100.0
 offset_bottom = 100.0
 
-[node name="CardSlot2" parent="VBoxContainer/CardSlots" instance=ExtResource( "2_v2tt0" )]
+[node name="GoodSlot" parent="VBoxContainer/CardSlots" instance=ExtResource( "2_v2tt0" )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 offset_left = 104.0
@@ -46,30 +49,26 @@ offset_right = 204.0
 offset_bottom = 100.0
 
 [node name="Cards" type="HBoxContainer" parent="VBoxContainer"]
+offset_left = 208.0
 offset_top = 308.0
-offset_right = 1024.0
-offset_bottom = 719.0
+offset_right = 816.0
+offset_bottom = 608.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Card" parent="VBoxContainer/Cards" instance=ExtResource( "2_rpk1p" )]
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_right = 264.0
-offset_bottom = 411.0
-__meta__ = {
-"_edit_group_": true,
-"_edit_use_anchors_": false
-}
+offset_right = 200.0
+offset_bottom = 300.0
 
 [node name="Card2" parent="VBoxContainer/Cards" instance=ExtResource( "2_rpk1p" )]
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_left = 268.0
-offset_right = 532.0
-offset_bottom = 411.0
-__meta__ = {
-"_edit_group_": true,
-"_edit_use_anchors_": false
-}
+offset_left = 204.0
+offset_right = 404.0
+offset_bottom = 300.0
+
+[node name="Card3" parent="VBoxContainer/Cards" instance=ExtResource( "2_rpk1p" )]
+offset_left = 408.0
+offset_right = 608.0
+offset_bottom = 300.0

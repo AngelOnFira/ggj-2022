@@ -9,6 +9,5 @@ func _process(delta):
 	pass
 
 func card_action(action,card):
-	print(action)
-	print(card)
+	print("group_call on : CardManager -- card_action -- ",action," ",card)
 	pass

@@ -1,6 +1,6 @@
 extends Control
 
-var PlayerCard = preload("res://Card.tsn")
+var PlayerCard = preload("res://Card.tscn")
 var CardContainerPath = NodePath("PlayerCards/HBoxContainer")
 var current_page
 

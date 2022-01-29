@@ -27,6 +27,7 @@ margin_left = 7.0
 margin_top = 7.0
 margin_right = 93.0
 margin_bottom = 143.0
+mouse_filter = 2
 
 [node name="PurpleBackground" type="TextureRect" parent="Background"]
 margin_right = 86.0
@@ -73,6 +74,7 @@ margin_left = 7.0
 margin_top = 7.0
 margin_right = 93.0
 margin_bottom = 143.0
+mouse_filter = 2
 
 [node name="CircularFrame" type="TextureRect" parent="Frame"]
 margin_right = 86.0
@@ -99,8 +101,10 @@ margin_left = 7.0
 margin_top = 7.0
 margin_right = 93.0
 margin_bottom = 143.0
+mouse_filter = 2
 
 [node name="Cub" type="Control" parent="Card"]
+visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 __meta__ = {
@@ -137,6 +141,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Continue" type="Control" parent="Card"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 margin_left = 7.0
 margin_top = 7.0
@@ -158,6 +169,15 @@ margin_bottom = 20.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "right"
+
+[node name="BannerText" type="Label" parent="."]
+anchor_left = 0.271
+anchor_top = 0.748
+anchor_right = 0.376
+anchor_bottom = 0.757
+margin_right = 38.514
+margin_bottom = 14.0
+text = "tasda"
 
 [connection signal="gui_input" from="." to="." method="_on_Card_gui_input"]
 [connection signal="pressed" from="HBoxContainer/Good" to="." method="good_action"]

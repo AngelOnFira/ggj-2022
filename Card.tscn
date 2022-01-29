@@ -138,7 +138,6 @@ __meta__ = {
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
-visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 93.0

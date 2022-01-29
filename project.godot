@@ -8,6 +8,22 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node",
+"class": "CardData",
+"language": "GDScript",
+"path": "res://Prototype/CardData.gd"
+}, {
+"base": "Node",
+"class": "Page",
+"language": "GDScript",
+"path": "res://Prototype/Page.gd"
+} ]
+_global_script_class_icons={
+"CardData": "",
+"Page": ""
+}
+
 [application]
 
 config/name="GGJ-2022"

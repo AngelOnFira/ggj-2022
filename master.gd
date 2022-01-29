@@ -31,7 +31,7 @@ func update_page(page:Page):
 	var cards_to_add = []
 	
 	narrator.clear()
-	narrator.append_text(page.text_description)
+	narrator.append_text(page.get_story())
 
 	# Remove existing cards
 	for child in cards_container.get_children():

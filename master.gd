@@ -5,7 +5,7 @@ var player_card:PackedScene = preload("res://Card.tscn")
 const CARD_CONTAINER_PATH:NodePath = NodePath("PlayerCards/HBoxContainer")
 const NARRATOR:NodePath = NodePath("VBoxContainer/Narrator")
 
-var current_page
+var current_page:Page = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -22,6 +22,7 @@ func _process(_delta):
 
 func card_action(action:String,card:String):
 	print("group_call on : CardManager -- card_action -- ",action," ",card)
+	self.current_page.take_action(card,action)
 	pass
 
 func update_page(page:Page):
@@ -37,13 +38,16 @@ func update_page(page:Page):
 	for child in cards_container.get_children():
 		child.queue_free()
 		
-	if page.next_page == null:
+	if page == null:
 		var card = player_card.instance()
 		card.card_id = "Continue"
 		#TODO : add the continue card textures here
 		cards_container.add_child(card)
 	else:
-		print("stop")
+		for page_card in page.get_cards():
+			var card = player_card.instance()
+			card.card_id = page_card.id
+			cards_container.add_child(card)
 		pass
 	
 	# TODO Add new cards then update page text

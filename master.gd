@@ -20,9 +20,10 @@ func _ready():
 func _process(_delta):
 	pass
 
-func card_action(action:String,card:String):
+# Signal reciever from a card getting a button pressed
+func card_action(action: String, card: String):
 	print("group_call on : CardManager -- card_action -- ",action," ",card)
-	self.current_page.take_action(card,action)
+	self.current_page.take_action(card, action)
 	pass
 
 func update_page(page:Page):

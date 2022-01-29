@@ -42,21 +42,21 @@ func _change_page():
 # Override to Specify next_page and apply any state logic
 # Side is a string represented as either "left" or "right"
 func take_action(card: String, side: String):
-	# If we have no cards, and a default is specified, go to that page
-	if len(cards) == 0:
+	# If we have no cards
+	if len(cards) == 0 and continue_left != null and continue_right != null:
+		# If continue_default is set (making a jump to a new page)
 		if continue_default:
 			next_page = get_node_or_null(continue_default)
-	
-	print(cards)
-	if len(cards) == 1:
-		if side == "left":
-			next_page = get_node_or_null(continue_left)
-			print(continue_left)
-		elif side == "right":
-			next_page =  get_node_or_null(continue_right)
-			print(continue_right)
+		# Otherwise, left and right should be set
 		else:
-			print("error")
+			if side == "left":
+				next_page = get_node_or_null(continue_left)
+				print(continue_left)
+			elif side == "right":
+				next_page =  get_node_or_null(continue_right)
+				print(continue_right)
+			else:
+				print("error")
 
 	_change_page()
 

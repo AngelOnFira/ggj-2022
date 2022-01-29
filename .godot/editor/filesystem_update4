@@ -1,0 +1,6 @@
+res://CardSlotContainer.tscn
+res://card.gd
+res://card.tscn
+res://master.gd
+res://master.tscn
+res://narrator.tscn

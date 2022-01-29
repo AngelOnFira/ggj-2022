@@ -2,16 +2,16 @@
 
 importer="texture"
 type="StreamTexture2D"
-uid="uid://c8fuuc6ceyfh8"
-path="res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.stex"
+uid="uid://b406ol4fiohda"
+path="res://.godot/imported/wolf-temp2.png-69d8d4ccb9807ab0776d6fad59c7f874.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.png"
-dest_files=["res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.stex"]
+source_file="res://Assets/Sprites/wolf-temp2.png"
+dest_files=["res://.godot/imported/wolf-temp2.png-69d8d4ccb9807ab0776d6fad59c7f874.stex"]
 
 [params]
 

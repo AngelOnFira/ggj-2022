@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://t1ahjqi6errx"]
+
+[ext_resource type="Texture2D" uid="uid://k7sniplmpl3g" path="res://Assets/Sprites/wolf-temp1.png" id="1_ank04"]
+[ext_resource type="Script" path="res://card.gd" id="1_jjlk0"]
+
+[node name="Card" type="CenterContainer" groups=["Card"]]
+anchor_right = 0.257813
+anchor_bottom = 0.685
+offset_right = -64.0
+offset_bottom = -111.0
+rect_min_size = Vector2(200, 300)
+rect_clip_content = true
+script = ExtResource( "1_jjlk0" )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
+offset_right = 264.0
+offset_bottom = 411.0
+
+[node name="TextureRect" type="TextureRect" parent="AspectRatioContainer"]
+offset_right = 264.0
+offset_bottom = 411.0
+texture = ExtResource( "1_ank04" )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_left = 88.0
+offset_top = 190.0
+offset_right = 176.0
+offset_bottom = 221.0
+
+[node name="Good" type="Button" parent="HBoxContainer"]
+offset_right = 50.0
+offset_bottom = 31.0
+text = "Good"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Evil" type="Button" parent="HBoxContainer"]
+offset_left = 54.0
+offset_right = 88.0
+offset_bottom = 31.0
+text = "Evil"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="button_up" from="HBoxContainer/Good" to="." method="good_action"]
+[connection signal="button_up" from="HBoxContainer/Evil" to="." method="bad_action"]

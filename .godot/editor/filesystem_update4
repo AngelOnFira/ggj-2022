@@ -1,6 +1,4 @@
 res://CardSlotContainer.tscn
 res://card.tscn
-res://master.gd
 res://master.tscn
-res://narrator.gd
 res://narrator.tscn

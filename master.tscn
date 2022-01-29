@@ -35,13 +35,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="CardSlot" parent="VBoxContainer/CardSlots" instance=ExtResource( "2_v2tt0" )]
+[node name="EvilSlot" parent="VBoxContainer/CardSlots" instance=ExtResource( "2_v2tt0" )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 offset_right = 100.0
 offset_bottom = 100.0
 
-[node name="CardSlot2" parent="VBoxContainer/CardSlots" instance=ExtResource( "2_v2tt0" )]
+[node name="GoodSlot" parent="VBoxContainer/CardSlots" instance=ExtResource( "2_v2tt0" )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 offset_left = 104.0

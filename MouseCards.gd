@@ -51,8 +51,6 @@ func exit_area():
 	
 
 func new_card_mouse_hover(card:Control,deck_card:Control):
-	#var position:Vector2 = Vector2(0,0)
-	print("hello")
 	card.set_position(Vector2(-card.get_rect().size.x/2,-card.get_rect().size.y/2))
 	self.deck_cards.append(deck_card)
 	self.child_cards.append(card)

@@ -1,0 +1,15 @@
+[gd_scene format=2]
+
+[node name="ParticleChoice" type="Node2D"]
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+explosiveness = 1.0
+randomness = 1.0
+lifetime_randomness = 0.5
+spread = 180.0
+gravity = Vector2( 0, 2 )
+initial_velocity = 65.22
+tangential_accel = 36.7
+tangential_accel_random = 1.0
+damping = 69.72
+damping_random = 0.37

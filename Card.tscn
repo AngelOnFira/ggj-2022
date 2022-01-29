@@ -49,5 +49,6 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "Evil"
 
+[connection signal="gui_input" from="." to="." method="_on_Card_gui_input"]
 [connection signal="pressed" from="HBoxContainer/Good" to="." method="good_action"]
 [connection signal="pressed" from="HBoxContainer/Evil" to="." method="bad_action"]

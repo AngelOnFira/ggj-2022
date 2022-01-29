@@ -171,12 +171,10 @@ size_flags_vertical = 3
 text = "right"
 
 [node name="BannerText" type="Label" parent="."]
-anchor_left = 0.271
-anchor_top = 0.748
-anchor_right = 0.376
-anchor_bottom = 0.757
-margin_right = 38.514
-margin_bottom = 14.0
+margin_left = 7.0
+margin_top = 68.0
+margin_right = 93.0
+margin_bottom = 82.0
 text = "tasda"
 
 [connection signal="gui_input" from="." to="." method="_on_Card_gui_input"]

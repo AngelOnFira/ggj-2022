@@ -46,12 +46,14 @@ func take_action(card: String, side: String):
 	if len(cards) == 0:
 		if continue_default:
 			next_page = get_node_or_null(continue_default)
-
+			
 	if len(cards) == 1:
 		if side == "left":
-			next_page = get_node_or_null(continue_left)
+			next_page = .get_node_or_null(continue_left)
+		elif side == "right":
+			next_page =  get_node_or_null(continue_right)
 		else:
-			next_page = get_node_or_null(continue_right)
+			print("error")
 
 	_change_page()
 

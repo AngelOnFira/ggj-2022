@@ -16,7 +16,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_right = -924.0
 margin_bottom = -450.0
-rect_min_size = Vector2( 100, 150 )
+rect_min_size = Vector2( 200, 300 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -25,13 +25,13 @@ __meta__ = {
 [node name="Background" type="Control" parent="."]
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 93.0
-margin_bottom = 143.0
+margin_right = 193.0
+margin_bottom = 293.0
 mouse_filter = 2
 
 [node name="PurpleBackground" type="TextureRect" parent="Background"]
-margin_right = 86.0
-margin_bottom = 136.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 texture = ExtResource( 4 )
 expand = true
 stretch_mode = 1
@@ -40,8 +40,8 @@ __meta__ = {
 }
 
 [node name="YellowBackground" type="TextureRect" parent="Background"]
-margin_right = 86.0
-margin_bottom = 136.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 texture = ExtResource( 6 )
 expand = true
 stretch_mode = 1
@@ -50,8 +50,8 @@ __meta__ = {
 }
 
 [node name="SwirlDecoration" type="TextureRect" parent="Background"]
-margin_right = 86.0
-margin_bottom = 136.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 texture = ExtResource( 9 )
 expand = true
 stretch_mode = 1
@@ -60,8 +60,8 @@ __meta__ = {
 }
 
 [node name="FrameDecoration" type="TextureRect" parent="Background"]
-margin_right = 86.0
-margin_bottom = 136.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 texture = ExtResource( 7 )
 expand = true
 stretch_mode = 1
@@ -72,13 +72,13 @@ __meta__ = {
 [node name="Frame" type="Control" parent="."]
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 93.0
-margin_bottom = 143.0
+margin_right = 193.0
+margin_bottom = 293.0
 mouse_filter = 2
 
 [node name="CircularFrame" type="TextureRect" parent="Frame"]
-margin_right = 86.0
-margin_bottom = 136.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 texture = ExtResource( 1 )
 expand = true
 stretch_mode = 1
@@ -87,8 +87,8 @@ __meta__ = {
 }
 
 [node name="Banner" type="TextureRect" parent="Frame"]
-margin_right = 86.0
-margin_bottom = 136.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 texture = ExtResource( 8 )
 expand = true
 stretch_mode = 1
@@ -99,21 +99,21 @@ __meta__ = {
 [node name="Card" type="Control" parent="."]
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 93.0
-margin_bottom = 143.0
+margin_right = 193.0
+margin_bottom = 293.0
 mouse_filter = 2
 
 [node name="Cub" type="Control" parent="Card"]
 visible = false
-margin_right = 40.0
-margin_bottom = 40.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Mountain" type="TextureRect" parent="Card/Cub"]
-margin_right = 86.0
-margin_bottom = 136.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 texture = ExtResource( 10 )
 expand = true
 stretch_mode = 1
@@ -122,8 +122,8 @@ __meta__ = {
 }
 
 [node name="Stars" type="TextureRect" parent="Card/Cub"]
-margin_right = 86.0
-margin_bottom = 136.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 texture = ExtResource( 5 )
 expand = true
 stretch_mode = 1
@@ -132,8 +132,8 @@ __meta__ = {
 }
 
 [node name="Cub" type="TextureRect" parent="Card/Cub"]
-margin_right = 86.0
-margin_bottom = 136.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 texture = ExtResource( 3 )
 expand = true
 stretch_mode = 1
@@ -149,33 +149,49 @@ __meta__ = {
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
+visible = false
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 93.0
+margin_right = 193.0
 margin_bottom = 27.0
 size_flags_vertical = 0
 
 [node name="Good" type="Button" parent="HBoxContainer"]
-margin_right = 41.0
+margin_right = 91.0
 margin_bottom = 20.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "left"
 
 [node name="Evil" type="Button" parent="HBoxContainer"]
-margin_left = 45.0
-margin_right = 86.0
+margin_left = 95.0
+margin_right = 186.0
 margin_bottom = 20.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "right"
 
-[node name="BannerText" type="Label" parent="."]
+[node name="TextContainer" type="Control" parent="."]
 margin_left = 7.0
-margin_top = 68.0
-margin_right = 93.0
-margin_bottom = 82.0
+margin_top = 7.0
+margin_right = 193.0
+margin_bottom = 293.0
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TextContainer"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -58.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BannerText" type="Label" parent="TextContainer/VBoxContainer"]
+margin_right = 186.0
+margin_bottom = 14.0
 text = "tasda"
+align = 1
 
 [connection signal="gui_input" from="." to="." method="_on_Card_gui_input"]
 [connection signal="pressed" from="HBoxContainer/Good" to="." method="good_action"]

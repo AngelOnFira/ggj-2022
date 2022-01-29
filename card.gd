@@ -33,5 +33,5 @@ func set_card_type(type: String):
 	# Show the requested child
 	$Card.get_node(type).show()
 	
-	$BannerText.text = type
+	$TextContainer/VBoxContainer/BannerText.text = type
 	

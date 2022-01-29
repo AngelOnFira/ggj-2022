@@ -46,23 +46,30 @@ margin_bottom = 200.0
 [node name="CardSlots" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 204.0
 margin_right = 1024.0
-margin_bottom = 304.0
+margin_bottom = 604.0
 size_flags_horizontal = 5
 size_flags_vertical = 4
 
 [node name="DecisionAreaLeft" parent="VBoxContainer/CardSlots" instance=ExtResource( 5 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 510.0
-margin_bottom = 100.0
+margin_right = 358.0
+margin_bottom = 400.0
+rect_min_size = Vector2( 0, 400 )
 decision = "left"
+
+[node name="Control" type="Control" parent="VBoxContainer/CardSlots"]
+margin_left = 362.0
+margin_right = 662.0
+margin_bottom = 400.0
+rect_min_size = Vector2( 300, 0 )
 
 [node name="DecisionAreaRight" parent="VBoxContainer/CardSlots" instance=ExtResource( 5 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 514.0
+margin_left = 666.0
 margin_right = 1024.0
-margin_bottom = 100.0
+margin_bottom = 400.0
 decision = "right"
 
 [node name="PlayerCards" type="CenterContainer" parent="."]

@@ -1,8 +1,11 @@
-[gd_scene format=3 uid="uid://c1031k1akm4e3"]
+[gd_scene load_steps=2 format=3 uid="uid://c1031k1akm4e3"]
+
+[ext_resource type="Script" path="res://narrator.gd" id="1_mpv1a"]
 
 [node name="Narrator" type="PanelContainer"]
 anchor_right = 1.0
 rect_min_size = Vector2(0, 200)
+script = ExtResource( "1_mpv1a" )
 __meta__ = {
 "_edit_use_anchors_": false
 }

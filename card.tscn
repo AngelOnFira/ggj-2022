@@ -3,11 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://k7sniplmpl3g" path="res://Assets/Sprites/wolf-temp1.png" id="1_ank04"]
 [ext_resource type="Script" path="res://card.gd" id="1_jjlk0"]
 
-[node name="Card" type="CenterContainer" groups=["Card"]]
-anchor_right = 0.257813
-anchor_bottom = 0.685
-offset_right = -64.0
-offset_bottom = -111.0
+[node name="Card" type="PanelContainer" groups=["Card"]]
+offset_right = 208.0
+offset_bottom = 308.0
 rect_min_size = Vector2(200, 300)
 rect_clip_content = true
 script = ExtResource( "1_jjlk0" )
@@ -16,33 +14,45 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
+[node name="CardSprite" type="Sprite2D" parent="."]
+texture = ExtResource( "1_ank04" )
+centered = false
+__meta__ = {
+"_edit_group_": true
+}
+
 [node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
-offset_right = 264.0
-offset_bottom = 411.0
+visible = false
+offset_right = 200.0
+offset_bottom = 300.0
 
 [node name="TextureRect" type="TextureRect" parent="AspectRatioContainer"]
-offset_right = 264.0
-offset_bottom = 411.0
+visible = false
+offset_left = -32.0
+offset_top = -55.5
+offset_right = 232.0
+offset_bottom = 355.5
 texture = ExtResource( "1_ank04" )
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
-offset_left = 88.0
-offset_top = 190.0
-offset_right = 176.0
-offset_bottom = 221.0
+offset_right = 208.0
+offset_bottom = 31.0
+size_flags_vertical = 0
 
 [node name="Good" type="Button" parent="HBoxContainer"]
-offset_right = 50.0
+offset_right = 102.0
 offset_bottom = 31.0
+size_flags_horizontal = 3
 text = "Good"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Evil" type="Button" parent="HBoxContainer"]
-offset_left = 54.0
-offset_right = 88.0
+offset_left = 106.0
+offset_right = 208.0
 offset_bottom = 31.0
+size_flags_horizontal = 3
 text = "Evil"
 __meta__ = {
 "_edit_use_anchors_": false

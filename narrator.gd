@@ -18,5 +18,5 @@ func clear():
 # align : align option for text based on bbcode_text (defualt "center")
 func append_text(text:String ,align:String ="center"):
 	var insert_text = "[" + align + "]" + text + "[/" + align + "]"
-	$TextLabel.text = $TextLabel.text + "\n" + insert_text
+	$TextLabel.bbcode_text = $TextLabel.text + "\n" + insert_text
 	pass

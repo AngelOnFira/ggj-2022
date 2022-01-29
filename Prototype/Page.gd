@@ -45,7 +45,7 @@ func take_action(card: String, side: String):
 	# If we have no cards, and a default is specified, go to that page
 	if len(cards) == 0:
 		if continue_default:
-			next_page = get_node_or_null(continue_default)				
+			next_page = get_node_or_null(continue_default)
 
 	if len(cards) == 1:
 		if side == "left":

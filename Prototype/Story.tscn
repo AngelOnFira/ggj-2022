@@ -1,43 +1,45 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Prototype/StoryArchScene.gd" type="Script" id=1]
-[ext_resource path="res://Prototype/StoryElement.gd" type="Script" id=3]
-[ext_resource path="res://Prototype/DecisionElement.gd" type="Script" id=4]
+[ext_resource path="res://Prototype/Story.gd" type="Script" id=1]
+[ext_resource path="res://Prototype/Page.gd" type="Script" id=4]
 
-[node name="Story" type="Node2D"]
+[node name="Story" type="Node"]
 script = ExtResource( 1 )
 
-[node name="LeavingTown" type="Node2D" parent="."]
+[node name="LeavingTown" type="Node" parent="."]
 
-[node name="TownStory" type="Node2D" parent="LeavingTown"]
-script = ExtResource( 3 )
+[node name="TownStory" type="Node" parent="LeavingTown"]
+script = ExtResource( 4 )
 text_description = "You are a young girl, sick of the sameness of your village. It's plain, ordinary, and all around too dull for your growing sensibilities. You want excitement, to see what's out there in the world. It has to be more exciting than this. You've heard tells of a wise hermit, a retired adventurer, living just through the forest. One bright and sunny day you pack your bags, hug your family, take your family locket and some food, and make your way to the forest."
 
-[node name="VillageBoundaries" type="Node2D" parent="LeavingTown"]
-script = ExtResource( 3 )
-text_description = "Leaving the village boundaries, you feel flush. You aren't sure if it is excitement or anxiety, fear or curiosity. You follow the road past some worn down houses on the outskirts of town; nobody lives here anymore. You used to play here with your brother when you were younger, but he grew up. He became part of the village guard, and warned her away from these houses."
+[node name="VillageBoundaries" type="Node" parent="LeavingTown"]
+script = ExtResource( 4 )
+text_description = "Leaving the village boundaries, you feel flush. You aren't sure if it is excitement or anxiety, fear or curiosity. You follow the road past some worn down houses on the outskirts of town; nobody lives here anymore. You used to play here with your brother when you were younger, but he grew up. He became part of the village guard, and warned her away from these houses.
 
-[node name="BrotherSaying" type="Node2D" parent="LeavingTown"]
-script = ExtResource( 3 )
-text_description = "\"All sorts out there,\" he'd say. \"It's not as safe as it was.\""
+\"All sorts out there,\" he'd say. \"It's not as safe as it was.\""
 
-[node name="WarmthSun" type="Node2D" parent="LeavingTown"]
-script = ExtResource( 3 )
+[node name="WarmthSun" type="Node" parent="LeavingTown"]
+script = ExtResource( 4 )
 text_description = "You feel the warmth of the sun overhead as it comes up over the hills. As you approach the forest, the smells of flowers and morning dew is overwhelming, but fills you with a sense of calm and wonder."
 
-[node name="EdgeForest" type="Node2D" parent="LeavingTown"]
+[node name="EdgeForest" type="Node" parent="LeavingTown"]
 script = ExtResource( 4 )
 text_description = "You stand at the edge of the forest, looking both ways and seeing it stretch out forever. A chill runs up your back, sweat finds its way to your brow. You look through your bags one last time, \"Do I need to go back? Did I forget something,\" you ask yourself. Food, locket, water, teas, a bedroll, some camping equipment. You're all set, but you feel so unprepared."
-cards = [ [ "Child", "You're scared of the woods", "There is nothing to fear!" ], [ "Blade", "How can I be scared, I'm armed!", "This is dangerous, maybe I shouldn't take it with me." ] ]
+continue_left = NodePath("../ForestFear")
+continue_right = NodePath("../ForestCurious")
 
-[node name="BirdSongs" type="Node2D" parent="LeavingTown"]
-script = ExtResource( 3 )
+[node name="ForestFear" type="Node" parent="LeavingTown"]
+script = ExtResource( 4 )
+text_description = "You hear the terrible sounds and it sends a shiver down your spine. You know there's no turning back now, but the hesitant is strong."
+continue_default = NodePath("../HearBirds")
+
+[node name="ForestCurious" type="Node" parent="LeavingTown"]
+script = ExtResource( 4 )
+text_description = "You set your fears aside; the forest is so beautiful, the cool wind calms your nerves. It's time to press on."
+continue_default = NodePath("../HearBirds")
+
+[node name="HearBirds" type="Node" parent="LeavingTown"]
+script = ExtResource( 4 )
 text_description = "You take your first steps into the forest.
 
  You hear the songs of the birds, the rustling of leaves, the trickling of a nearby creak. It's serene and surreal. It isn't long before you hear a growling. You suddenly feel like you're falling, spinning on your feet. What could it be?"
-
-[node name="HungerMonster" type="Node2D" parent="LeavingTown"]
-script = ExtResource( 3 )
-text_description = "It turns out, the first monster you encounter is your own hunger. You laugh it off, sit down by a tree, and begin to prepare your lunch. You pull some nuts and berries and a few dried meats. There isn't much to spare, so you have to eat light.
-
-Before your first bite, another growl - this time it isn't you."

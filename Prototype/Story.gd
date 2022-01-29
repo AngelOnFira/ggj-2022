@@ -1,4 +1,4 @@
-extends Node2D
+extends Node
 
 func _ready():
 	# Make sure each child has a script, and the expected members
@@ -30,40 +30,43 @@ func _ready():
 	print("Story Begins!")
 	print("")
 
-	for page in self.get_children():
+	for chapter in self.get_children():
 		# Pages
 		
 		# Start with the first story_element
-		var next_element_name = page.get_children()[0].name
+		var next_page_name = chapter.get_children()[0].name
 
 		# Loop through the story_elements until there are no more
-		while true:
-			var this_element = self.find_node(next_element_name)
+		while false:
+			var current_page = self.find_node(next_page_name)
 
-			if this_element.ELEMENT_TYPE == "DecisionElement":
-				print("DecisionElement:")
-				print("----------------")
-			elif this_element.ELEMENT_TYPE == "StoryElement":
-				print("StoryElement:")
-				print("-------------")
+			# Print the story text
+			print("\t", current_page.get_story())
 
+			# Print each card and the options in those cards
+			if current_page.get_cards() != []:
+				for card in current_page.get_cards():
+					print(card.id)
+					print("\t>", card.left_text, "(%s)" % [card.left_pointer])
+					print("\t>", card.right_text, "(%s)" % [card.left_pointer])
+					print("")
 
-			print("\t", this_element.get_story())
-			print("")
+			
+			
+			# XXX: Debug; Goto the next page in the story, regardless of choice
+			if next_page_name == "":
+				# Get current page index
+				var current_page_index = chapter.get_children().find(current_page)
 
-
-			if this_element.ELEMENT_TYPE == "DecisionElement":
-				print("\tCard options:")
-				for card in this_element.cards:
-					print("\t- {card}".format({"card": card}))
-				print("")
-
-			next_element_name = this_element.get_next_node()
-
-			if next_element_name == "":
-				break
+				# Check if there is a next page
+				if current_page_index + 1 < len(chapter.get_children()):
+					var next_page = chapter.get_child(current_page_index + 1)
+					next_page_name = next_page.name
+				else:
+					# There is no next page, so we are done
+					break
+				
 
 			# Slow down so we can see all the debug text without Godot clipping
 			# it
 			yield(get_tree().create_timer(0.05), "timeout")
-

@@ -8,6 +8,6 @@ func _ready():
 func _process(delta):
 	pass
 
-func card_action(action,card):
+func card_action(action:String,card:String):
 	print("group_call on : CardManager -- card_action -- ",action," ",card)
 	pass

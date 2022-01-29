@@ -33,7 +33,8 @@ func _change_page():
 		# If we are at the end of the list, go to the next chapter
 		if next_idx >= self.get_parent().get_child_count():
 			next_idx = 0
-		
+			# TODO: Go to next chapter instead of looping to index 0
+
 		self.next_page = self.get_parent().get_child(next_idx)
 
 	emit_signal("page_changed", self.next_page)

@@ -6,9 +6,9 @@
 [node name="Card" type="PanelContainer" groups=["Card"]]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = -824.0
-margin_bottom = -300.0
-rect_min_size = Vector2( 200, 300 )
+margin_right = -924.0
+margin_bottom = -450.0
+rect_min_size = Vector2( 100, 150 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -17,9 +17,8 @@ __meta__ = {
 [node name="TextureRect" type="TextureRect" parent="."]
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 207.0
-margin_bottom = 307.0
-rect_min_size = Vector2( 200, 300 )
+margin_right = 93.0
+margin_bottom = 143.0
 texture = ExtResource( 1 )
 expand = true
 stretch_mode = 1
@@ -30,20 +29,20 @@ __meta__ = {
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 207.0
+margin_right = 93.0
 margin_bottom = 27.0
 size_flags_vertical = 0
 
 [node name="Good" type="Button" parent="HBoxContainer"]
-margin_right = 98.0
+margin_right = 46.0
 margin_bottom = 20.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "Good"
 
 [node name="Evil" type="Button" parent="HBoxContainer"]
-margin_left = 102.0
-margin_right = 200.0
+margin_left = 50.0
+margin_right = 86.0
 margin_bottom = 20.0
 size_flags_horizontal = 3
 size_flags_vertical = 3

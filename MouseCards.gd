@@ -16,7 +16,7 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	
 	self.set_global_position(get_viewport().get_mouse_position())
 	var t = get_viewport().get_mouse_position().x/get_viewport_rect().size.x
@@ -30,7 +30,8 @@ func _process(delta):
 	
 	if Input.is_action_just_released("mouse_button_left"):
 		for child in self.child_cards:
-			get_tree().call_group("CardManager","card_action",self.action,child.card_id)
+			if self.is_in_area:
+				get_tree().call_group("CardManager","card_action",self.action,child.card_id)
 			self.remove_child(child)
 		for child_dup in self.deck_cards:
 			child_dup.show()
@@ -38,9 +39,9 @@ func _process(delta):
 		deck_cards = []
 		child_cards = []
 
-func enter_area(action:String):
+func enter_area(action_parm:String):
 	if len(deck_cards) > 0 :
-		self.action = action
+		self.action = action_parm
 		self.is_in_area = true
 	
 func exit_area():

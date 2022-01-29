@@ -30,11 +30,11 @@ func _ready():
 	print("Story Begins!")
 	print("")
 
-	for page in self.get_children():
+	for chapter in self.get_children():
 		# Pages
 		
 		# Start with the first story_element
-		var next_element_name = page.get_children()[0].name
+		var next_element_name = chapter.get_children()[0].name
 
 		# Loop through the story_elements until there are no more
 		while true:
@@ -61,7 +61,17 @@ func _ready():
 			next_element_name = this_element.get_next_node()
 
 			if next_element_name == "":
-				break
+				# Get current page index
+				var current_page_index = chapter.get_children().find(this_element)
+
+				# Check if there is a next page
+				if current_page_index + 1 < len(chapter.get_children()):
+					var next_page = chapter.get_child(current_page_index + 1)
+					next_element_name = next_page.name
+				else:
+					# There is no next page, so we are done
+					break
+				
 
 			# Slow down so we can see all the debug text without Godot clipping
 			# it

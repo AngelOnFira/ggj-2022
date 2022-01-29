@@ -9,13 +9,7 @@ var next_node: Node
 # element. For example, a DecisionElement should be able to link to a
 # StoryElement.
 var next_node_lookup = {
-	"TownStory": "VillageBoundaries",
-	"VillageBoundaries": "BrotherSaying",
-	"BrotherSaying": "WarmthSun",
-	"WarmthSun": "EdgeForest",
-	"EdgeForest": "BirdSongs",
-	"BirdSongs": "HungerMonster",
-	"HungerMonster": "",
+	
 }
 
 var decision_dictionary: Dictionary = {} 
@@ -29,3 +23,14 @@ func _ready():
 func callback():
 	pass
 	
+
+func get_next_node():
+	# Check if name is in the dictionary
+	if self.name in self.next_node_lookup:
+		return self.next_node_lookup[self.name]
+	else:
+		return ""
+	
+func get_story():
+	return self.text_description
+

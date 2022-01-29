@@ -25,7 +25,18 @@ func _ready():
 # Transitions to the next page specified by the next_page
 func _change_page():
 	#janky book keeping here
-	emit_signal("page_changed", next_page)
+	# If next page is null, we need to continue to the next child in the list
+	if self.next_page == null:
+		# Continue to the next child in the list
+		var next_idx = self.get_index() + 1
+
+		# If we are at the end of the list, go to the next chapter
+		if next_idx >= self.get_parent().get_child_count():
+			next_idx = 0
+		
+		self.next_page = self.get_parent().get_child(next_idx)
+
+	emit_signal("page_changed", self.next_page)
 
 # Override to Specify next_page and apply any state logic
 # Side is a string represented as either "left" or "right"
@@ -33,20 +44,13 @@ func take_action(card: String, side: String):
 	# If we have no cards, and a default is specified, go to that page
 	if len(cards) == 0:
 		if continue_default:
-			next_page = get_node(continue_default)
-		else:
-			var next_page_index = self.get_index()+1
-			if (next_page_index < self.get_parent().get_child_count()):
-				next_page = get_child(self.get_index()+1)
-			else:
-				pass
-				
+			next_page = get_node_or_null(continue_default)				
 
 	if len(cards) == 1:
 		if side == "left":
-			next_page = get_node(continue_left)
+			next_page = get_node_or_null(continue_left)
 		else:
-			next_page = get_node(continue_right)
+			next_page = get_node_or_null(continue_right)
 
 	_change_page()
 

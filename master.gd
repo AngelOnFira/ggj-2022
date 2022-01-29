@@ -1,7 +1,7 @@
 extends Control
 
-var PlayerCard = preload("res://Card.tscn")
-var CardContainerPath = NodePath("PlayerCards/HBoxContainer")
+var PlayerCard:PackedScene = preload("res://Card.tscn")
+var CardContainerPath:NodePath = NodePath("PlayerCards/HBoxContainer")
 var current_page
 
 # Called when the node enters the scene tree for the first time.
@@ -25,8 +25,8 @@ func update_page(page):
 	self.current_page = page
 
 	# Remove existing cards
-	var cards = get_node(CardContainerPath)
-	for child in cards.get_children():
+	#var cards = get_node(CardContainerPath)
+	for child in get_node(CardContainerPath).cards.get_children():
 		child.queue_free()
 	
 	# TODO Add new cards then update page text

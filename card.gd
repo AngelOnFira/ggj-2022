@@ -1,9 +1,12 @@
 extends PanelContainer
 
 export var card_id:String = "default"
+export var texture:Texture = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	if texture != null:
+		$TextureRect.texture = texture
 	
 	pass
 

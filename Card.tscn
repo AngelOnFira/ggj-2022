@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Assets/Sprites/wolf-temp1.png" type="Texture" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=1]
 [ext_resource path="res://card.gd" type="Script" id=2]
 
 [node name="Card" type="PanelContainer" groups=["Card"]]
@@ -34,19 +34,19 @@ margin_bottom = 27.0
 size_flags_vertical = 0
 
 [node name="Good" type="Button" parent="HBoxContainer"]
-margin_right = 46.0
+margin_right = 41.0
 margin_bottom = 20.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Good"
+text = "left"
 
 [node name="Evil" type="Button" parent="HBoxContainer"]
-margin_left = 50.0
+margin_left = 45.0
 margin_right = 86.0
 margin_bottom = 20.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Evil"
+text = "right"
 
 [connection signal="gui_input" from="." to="." method="_on_Card_gui_input"]
 [connection signal="pressed" from="HBoxContainer/Good" to="." method="good_action"]

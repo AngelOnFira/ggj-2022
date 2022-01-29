@@ -20,9 +20,11 @@ var next_page: Node
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	set_card_data()
+	self.add_to_group("pages")
 
 # Transitions to the next page specified by the next_page
 func _change_page():
+	#janky book keeping here
 	emit_signal("page_changed", next_page)
 
 # Override to Specify next_page and apply any state logic
@@ -32,6 +34,13 @@ func take_action(card: String, side: String):
 	if len(cards) == 0:
 		if continue_default:
 			next_page = get_node(continue_default)
+		else:
+			var next_page_index = self.get_index()+1
+			if (next_page_index < self.get_parent().get_child_count()):
+				next_page = get_child(self.get_index()+1)
+			else:
+				pass
+				
 
 	if len(cards) == 1:
 		if side == "left":

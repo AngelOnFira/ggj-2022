@@ -1,82 +1,83 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Prototype/Story.gd" type="Script" id=1]
-[ext_resource path="res://Prototype/CardComponent.gd" type="Script" id=2]
-[ext_resource path="res://Prototype/Page.gd" type="Script" id=4]
+[ext_resource path="res://Import.gd" type="Script" id=1]
+[ext_resource path="res://Prototype/Page.gd" type="Script" id=2]
+[ext_resource path="res://Prototype/CardComponent.gd" type="Script" id=3]
 
-[node name="Story" type="Node"]
+[node name="Import" type="Node"]
 script = ExtResource( 1 )
+run_import = true
 
 [node name="Leaving" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You are a young girl, sick of the sameness of your village. It's plain, ordinary, and all around too dull for your growing sensibilities. You want excitement, to see what's out there in the world. It has to be more exciting than this. You've heard tells of a wise hermit, a retired adventurer, living just through the forest. One bright and sunny day you pack your bags, hug your family, take your family locket and some food, and make your way to the forest."
 
 [node name="Continue" type="Node" parent="Leaving"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../Boundaries")
 continue_right = NodePath("../../Boundaries")
 
 [node name="Boundaries" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "Leaving the village boundaries, you feel flush. You aren't sure if it is excitement or anxiety, fear or curiosity. You follow the road past some worn down houses on the outskirts of town; nobody lives here anymore. You used to play here with your brother when you were younger, but he grew up. He became part of the village guard, and warned her away from these houses.
 
 \"All sorts out there,\" he'd say. \"It's not as safe as it was.\""
 
 [node name="Family" type="Node" parent="Boundaries"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = " It felt weird`"
 right_text = " It felt right`"
 continue_left = NodePath("../../GoodReason")
 continue_right = NodePath("../../NewHorizons")
 
 [node name="Warmth" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You feel the warmth of the sun overhead as it comes up over the hills. As you approach the forest, the smells of flowers and morning dew is overwhelming, but fills you with a sense of calm and wonder."
 
 [node name="Continue" type="Node" parent="Warmth"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../ForestEdge")
 continue_right = NodePath("../../ForestEdge")
 
 [node name="ForestEdge" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You stand at the edge of the forest, looking both ways and seeing it stretch out forever. A chill runs up your back, sweat finds its way to your brow. You look through your bags one last time, \"Do I need to go back? Did I forget something,\" you ask yourself. Food, locket, water, teas, a bedroll, some camping equipment. You're all set, but you feel so unprepared."
 
 [node name="Child" type="Node" parent="ForestEdge"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = " 'I was afraid"
 right_text = " 'I was curious"
 continue_left = NodePath("../../ForestAfraid")
 continue_right = NodePath("../../ForestCurious")
 
 [node name="ForestAfraid" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "The sounds and sights terrify you. It's already darker here, on the forest edge. You have to walk on, but it feels like you're entering the mouth of a giant, and you may not make it out."
 
 [node name="Continue" type="Node" parent="ForestAfraid"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../FirstSteps")
 continue_right = NodePath("../../FirstSteps")
 
 [node name="ForestCurious" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "No. You're packed, you're ready. It isn't so scary, the trees are beautiful, the smells alluring. What waits beyond this point? You're excited to find out."
 
 [node name="Continue" type="Node" parent="ForestCurious"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../FirstSteps")
 continue_right = NodePath("../../FirstSteps")
 
 [node name="FirstSteps" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You take your first steps into the forest.
 
  You hear the songs of the birds, the rustling of leaves, the trickling of a nearby creak. It's serene and surreal. It isn't long before you hear a growling. 
@@ -86,60 +87,60 @@ text_description = "You take your first steps into the forest.
  What could it be?"
 
 [node name="Continue" type="Node" parent="FirstSteps"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../FirstMonster")
 continue_right = NodePath("../../FirstMonster")
 
 [node name="FirstMonster" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "It turns out, the first monster you encounter is your own hunger. You laugh it off, sit down by a tree, and begin to prepare your lunch. You pull some nuts and berries and a few dried meats. There isn't much to spare, so you have to eat light.
 
 Before your first bite, another growl - this time it isn't you."
 
 [node name="Continue" type="Node" parent="FirstMonster"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../Howl")
 continue_right = NodePath("../../Howl")
 
 [node name="Howl" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You see the eyes peering out from the trees. You feel vulnerable out in the open, but somehow safe in the knowledge that whatever is out there has to show itself before claiming its lunch. You begin to put your food away when you hear the howl."
 
 [node name="Child" type="Node" parent="Howl"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = " It terrified me'"
 right_text = " Was it friendly?'"
 continue_left = NodePath("../../Terrified")
 continue_right = NodePath("../../Curious")
 
 [node name="Awoo" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "“Awoooooooo,” the shadow in the trees howled. It’s a wolf, there’s no doubt about that, but it doesn’t sound like the ones that the guards protect us from. It sounds smaller, maybe even sick. Small or sick, the growling still sets you on edge."
 
 [node name="Continue" type="Node" parent="Awoo"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../WolfCub")
 continue_right = NodePath("../../WolfCub")
 
 [node name="WolfCub" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You see the wolf cub come out of the forest, eyes wide with a terrible look - as terrible as this little guy could muster at least. You stand still as it approaches, unsure of what to do next. It hasn’t attacked yet, instead standing its ground."
 
 [node name="Stablemaster" type="Node" parent="WolfCub"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = " I gave some food.'"
 right_text = " I quickly ate.'"
 continue_left = NodePath("../../FeedWolf")
 continue_right = NodePath("../../FeedSelf")
 
 [node name="FeedWolf" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "Coming out of your frozen state, you look down at your hand and realize you’re still holding the salted meats your father packed for you. You throw it on the ground in front of you, hoping to show it that you can be friends.
 
 The terrible look on the cub melts away. It runs and devours the meat, licking the ground below it when it’s gone.
@@ -147,108 +148,108 @@ The terrible look on the cub melts away. It runs and devours the meat, licking t
 It moves toward you, a look in its eyes, but what is it? Was the food not enough?"
 
 [node name="Continue" type="Node" parent="FeedWolf"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../FriendlyMovesToward")
 continue_right = NodePath("../../FriendlyMovesToward")
 
 [node name="FriendlyMovesToward" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "It moves toward you, a look in its eyes, but what is it? Was the food not enough?
 
 Freezing again, you close your eyes in fear, until you feel a warm weight on your lap. You open your eyes and the wolf cub is looking up at you from your lap, tongue hanging out with a wild smile on its face, breath reeking of meat and mud. "
 
 [node name="Continue" type="Node" parent="FriendlyMovesToward"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../FriendlySitting")
 continue_right = NodePath("../../FriendlySitting")
 
 [node name="FriendlySitting" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You sit with the wolf cub and it rests, and you decide to take a moment to rest, too. When you wake, the wolf cub wakes as well. You begin to pack your things, your stomach still growling, and set off."
 
 [node name="Continue" type="Node" parent="FriendlySitting"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../Follows")
 continue_right = NodePath("../../Follows")
 
 [node name="Follows" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "The wolf cub follows."
 
 [node name="Continue" type="Node" parent="Follows"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../Berries")
 continue_right = NodePath("../../Berries")
 
 [node name="Berries" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "With your new friend close by your side, you still have a growling stomach to contend with. You continue to wander the straight path through the trees. You collect a few berries you know to be safe to eat, but they don’t do much to sate your stomachs. You have to be careful not to waste too many supplies."
 
 [node name="Continue" type="Node" parent="Berries"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../OldCampsites")
 continue_right = NodePath("../../OldCampsites")
 
 [node name="OldCampsites" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "Along the way you notice the remnants of old campsites. Torn and empty pouches, broken lanterns, the charred remains of fires. You know these paths are frequented by traders and the hunters who come with them, which hopefully explains the dried blood on the trees. At least you think it’s blood, but the sun is harder to see in this part of the forest. You would barely recognize the path if it weren’t for the occasional waypoint stones. The grass and moss has overrun most of it, now that the merchants have stopped coming this way."
 
 [node name="Continue" type="Node" parent="OldCampsites"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../Hooves")
 continue_right = NodePath("../../Hooves")
 
 [node name="Hooves" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "Or… had they? You hear the click-clacking of hooves, the jingling of wares, and some loud discussion between people. You can’t quite make out what they’re saying, or how far their voices are echoing, but you know they are getting closer."
 
 [node name="Cub" type="Node" parent="Hooves"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = " I was ready to fight.'"
 right_text = " I was ready to protect.'"
 continue_left = NodePath("../../Fight")
 continue_right = NodePath("../../Protect")
 
 [node name="Laughter" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "Laughter - loud, boisterous laughter arises from the approaching men. One of them must have told a pretty funny joke. Your friend walks slower and begins to trail behind, growling gently with distrust.
 
 You see the men, looking unlike any traders you’ve sever seen before. Their faces are covered, wearing some kind of goggles and face cloths, with thick beards protruding from below their chins."
 
 [node name="Continue" type="Node" parent="Laughter"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../Locket")
 continue_right = NodePath("../../Locket")
 
 [node name="Locket" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "They stop before you, and something seems to have caught their eye.
 
 “Locket,” a voice beckons. You couldn’t tell who was talking, and they all raised their arms to point in unison. “Locket,” they began to say together. “Locket!” they howled, their goggles reflecting the reddening sun. Their wild and dirty gray hair seems to rise upward like a ragged mane."
 
 [node name="Continue" type="Node" parent="Locket"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../CryOut")
 continue_right = NodePath("../../CryOut")
 
 [node name="CryOut" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You throw your hand to your chest, clutching your family’s locket, the metal cold from the forest’s shadows.
 
 You close your eyes again, unsure of how to continue. 
@@ -258,147 +259,147 @@ You close your eyes again, unsure of how to continue.
 “LOCKET, YOUNG ONE!” they scream, sending the birds that were sleeping in the trees high into the sky. “LOCKET!”"
 
 [node name="Cub" type="Node" parent="CryOut"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = " My friend attacked.' "
 right_text = " My friend stood guard before me.' "
 continue_left = NodePath("../../ CubAttack")
 continue_right = NodePath("../../ CubProtect")
 
 [node name="Family" type="Node" parent="CryOut"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = " I couldn't part with my locket.' "
 right_text = " I was ready to give up that part of me.' "
 continue_left = NodePath("../../ KeepLocket")
 continue_right = NodePath("../../ GiveLocket")
 
 [node name="DrawingSwords" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "Drawing swords, the men begin to walk around you. Your friend stands guard while the men laugh and howl. You fall down to one knee behind your furry friend and give it a hug. The laughing stops."
 
 [node name="Continue" type="Node" parent="DrawingSwords"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../OpenEyes")
 continue_right = NodePath("../../OpenEyes")
 
 [node name="OpenEyes" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You open your eyes and see the mules the men had behind them are standing alone. You spin around, scanning the trees for any sign of the bandits. Nothing. Just a sense of calming reassurance. You see the trees rustle through a ray of light shining between the trees and catch a glimpse of something tall and furry wandering away, bobbing from side to side. What happened?"
 
 [node name="Continue" type="Node" parent="OpenEyes"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../Mules")
 continue_right = NodePath("../../Mules")
 
 [node name="Mules" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "The mules begin to walk past you and toward the village, some bread and fruits falling from its side beside the metal swords laying on the ground."
 
 [node name="Cub" type="Node" parent="Mules"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = " I took a sword from the ground.'"
 right_text = " I hid the weapons in a bush.'"
 continue_left = NodePath("../../TakeSword")
 continue_right = NodePath("../../HideSword")
 
 [node name="TakeFood" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "Finally, you walk over the the food - there's more than you expected! You can't even carry it all. You and your friend sit down, take a moment, and reflect on what just happened.
 
 And both of your stomachs finally get to rest."
 
 [node name="Continue" type="Node" parent="TakeFood"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../MerchantOne")
 continue_right = NodePath("../../MerchantOne")
 
 [node name="MerchantOne" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "Weary from your encounter, you keep down the road. The trees grow taller, the din of wildlife seems to fade away and only the crunching of your feet and the happy snarls of your furry friend remain. "
 
 [node name="Continue" type="Node" parent="MerchantOne"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../Stars")
 continue_right = NodePath("../../Stars")
 
 [node name="Stars" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "The day begins to turn to night and glimpses through the trees shows the clear orange sky morphing into a wondrous flurry of heavenly shapes and lights. Swirling colours and dots of glowing white explode in the sky while the moon hides itself in a waning crescent. The wind howls through the trees in what sounds like a woodwind concert singing directly to you."
 
 [node name="Continue" type="Node" parent="Stars"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../Music")
 continue_right = NodePath("../../Music")
 
 [node name="Music" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "The music continues, but suddenly it stops sounding just like wind - bells and drums, a light murmuring and jingling. A caravan? More bandits? Are you just hearing things? The sounds of an active tavern and high-pitched, undecipherable conversations loom closer. Your friend lets out some concern."
 
 [node name="Stablemaster" type="Node" parent="Music"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = " I quieted the cub.'"
 right_text = " I comforted the cub.'"
 continue_left = NodePath("../../QuietCub")
 continue_right = NodePath("../../ComfortWolf")
 
 [node name="ComfortWolf" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You decide to bend down and comfort your friend with some gentle pats to the head and some scratches under his ear. He lets out an affectionate warble and rubs against you. The music gets closer, harmonizing with the wind."
 
 [node name="Continue" type="Node" parent="ComfortWolf"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../MusicSource")
 continue_right = NodePath("../../MusicSource")
 
 [node name="MusicSource" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You see the source of the music wandering toward - a lone cloaked figure wanders stiffly before you. Its cloak bounces as it trails behind. Outwardly its movements are stable, yet somehow it still seems totally erratic; neither as still as the town monks, nor as wild as the bandits; yet not at all like the ordinary people. 
 "
 
 [node name="Family" type="Node" parent="MusicSource"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = " I tried to hide from the stranger.'"
 right_text = " I waved to the stranger.'"
 continue_left = NodePath("../../Hide")
 continue_right = NodePath("../../Wave")
 
 [node name="Wave" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You stand tall with your friend and raise a hand to wave at the traveler, feeling a sinking feeling in you while you do it. The traveler’s wrist seems to rise independent of the rest of their arm. As they step into the moon’s gaze, you suddenly notice an enormous backpack protruding from their back; how could you have missed it! 
 
 It towers high and wide, the cloak covered in bright colours and shining metals. There’s a smell you can’t quite place, like spoiled milks and wet dog. "
 
 [node name="Continue" type="Node" parent="Wave"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../UpCloseMerchant")
 continue_right = NodePath("../../UpCloseMerchant")
 
 [node name="UpCloseMerchant" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You walk toward the traveler and come face to face with a shadow - but all along its shoulders you see small creatures roaming back and forth, in and out of the backpack. No… not a backpack; you see tiny bridges, buildings - is that a water wheel? Small mice of all colours chase each other around the arms of the stranger, who now holds them out wide. Hanging from his arms are various items on strings."
 
 [node name="Continue" type="Node" parent="UpCloseMerchant"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../Offers")
 continue_right = NodePath("../../Offers")
 
 [node name="Offers" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "Dangling from the figure is a number of wares. Your friend seems completely taken by the somehow sizzling sirloin dangling from a twine made with delicious herbs. Beside it is a collar and leash which could help keep your friend by your side when things get tough.
 
 It's impossible not to notice that one of the wares is moving! At first glance it was a wedge of cheese, but hanging off of it is a small grey mouse having a very difficult time holding on. Despite its struggle, it's happily indulging itself on its feast.
@@ -407,180 +408,180 @@ It's impossible not to notice that one of the wares is moving! At first glance i
 "
 
 [node name="Stablemaster" type="Node" parent="Offers"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = " I reached for the collar and leash.'"
 right_text = " I thought my friend deserved a nice meaty treat.'"
 continue_left = NodePath("../../Leash")
 continue_right = NodePath("../../Treat")
 
 [node name="Child" type="Node" parent="Offers"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = " The sight was so overwhelming, I backed away.'"
 right_text = " I reached out to help the struggling mouse.'"
 continue_left = NodePath("../../Nothing")
 continue_right = NodePath("../../GetMouse")
 
 [node name="GetMouse" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "The mouse looks up at you and lets out a squeak, reaching out back at you! Smiling, you reach toward it and it runs up your arm excitedly. It sits on your shoulder, tickling under your ear with one paw and pointing at the cheese with the other. You pull the cheese off the string and feed it to the mouse. "
 
 [node name="Continue" type="Node" parent="GetMouse"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../MerchantTavernMouse")
 continue_right = NodePath("../../MerchantTavernMouse")
 
 [node name="MerchantTavern" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "The merchant bows awkwardly again, revealing a small outdoor tavern this time with mice enjoying a handful of seeds and fermented berries, the sound of violins and bells ringing out from the pack. 
 
 The figure stumbles forward, its awkward gate seemingly pushing it forward more than walking. When you turn around, you see it has gone through a layer of dense fog."
 
 [node name="Continue" type="Node" parent="MerchantTavern"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../SmallClearing")
 continue_right = NodePath("../../SmallClearing")
 
 [node name="SmallClearing" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You see a small clearing up ahead where the moon shines down more brightly. You hear the flowing of a creek up ahead, and decide you should go much further to set up camp. You make your way into the clearing and realize it wasn’t a creek at all; visible only in the brightest rays, the faint image of a fountain begins to take form. "
 
 [node name="Continue" type="Node" parent="SmallClearing"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../ApproachFountain")
 continue_right = NodePath("../../ApproachFountain")
 
 [node name="ApproachFountain" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You approach the fountain, your friend staring intently at the mysterious form. As you get closer, it comes into full view - solid, yet ethereal. You notice now that your breath has been visible from the evening cold, but the closer you get the less your breath clouds ahead, the warmer you feel.
 
 Your friend turns his head."
 
 [node name="Continue" type="Node" parent="ApproachFountain"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../ReachOut")
 continue_right = NodePath("../../ReachOut")
 
 [node name="ReachOut" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You reach out a hand to touch it, and the stonework is warm and wet. The drips are warm to the touch and the pool reflects the stars and swirls above. It feels… inviting. It’s asking for something, something meaningful.
 
 It wants to help with your journey. You feel throughout your whole body that it wants your locket.
 "
 
 [node name="Child" type="Node" parent="ReachOut"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = " I was afraid of the fountain.'"
 right_text = " We both hopped into the fountain together.'"
 continue_left = NodePath("../../CampFear")
 continue_right = NodePath("../../TogetherCub")
 
 [node name="Family" type="Node" parent="ReachOut"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = " I set up camp beside the fountain.'"
 right_text = " I tossed my locket into the fountain.'"
 continue_left = NodePath("../../CampCub")
 continue_right = NodePath("../../PlaceLocket")
 
 [node name="PlaceLocketMouse" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "Something compels you to place the locket in the water. It’s your family locket, you can’t lose it, but it feels safe. As soon as the metal touches the liquids, they bubble and spurt upwards, surrounding the clearing with steam. You step back, and your animal friends give out respective cries."
 
 [node name="Continue" type="Node" parent="PlaceLocketMouse"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../WarmSteam")
 continue_right = NodePath("../../WarmSteam")
 
 [node name="WarmSteam" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "The warm steam envelops you, and you feel an overwhelming contentment, detached but perfectly connected. The fountain is gone, the steam surrounds the clearing, and you’re left standing in the middle of the warm fog. "
 
 [node name="Continue" type="Node" parent="WarmSteam"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../ProtectedWarm")
 continue_right = NodePath("../../ProtectedWarm")
 
 [node name="ProtectedWarm" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "Protected and warm, your friends lay down to sleep. You put down your bedroll and join them."
 
 [node name="Continue" type="Node" parent="ProtectedWarm"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../WakeUp")
 continue_right = NodePath("../../WakeUp")
 
 [node name="GoodReason" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "He knows what he's talking about. You know you'll need to be careful going forward. It feels strange to be going against his warnings like this."
 
 [node name="Continue" type="Node" parent="GoodReason"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../Warmth")
 continue_right = NodePath("../../Warmth")
 
 [node name="NewHorizons" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You know he had good intentions, but you also feel it's right for people to go out and explore again. Being cooped up in the village isn't a way to be."
 
 [node name="Continue" type="Node" parent="NewHorizons"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../Warmth")
 continue_right = NodePath("../../Warmth")
 
 [node name="Terrified" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "The sound sends shivers down your spine. A thousand possibilities run through your head, and none of them good."
 
 [node name="Continue" type="Node" parent="Terrified"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../Awoo")
 continue_right = NodePath("../../Awoo")
 
 [node name="Curious" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You're hungry, maybe it's just lost and hungry, too. You should be afraid, but the prospect of a new friend piques your curiosity."
 
 [node name="Continue" type="Node" parent="Curious"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../Awoo")
 continue_right = NodePath("../../Awoo")
 
 [node name="FeedSelf" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You manage to get your wits and realize the danger of holding meats with a hungry wolf before you. You can't show weakness.
 
 You hastily eat the meat, hoping to prevent an attack and keep your strength. "
 
 [node name="Continue" type="Node" parent="FeedSelf"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../HungryMovesToward")
 continue_right = NodePath("../../HungryMovesToward")
 
 [node name="HungryMovesToward" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "It moves toward you, a terrible look in its eyes. Will it devour your pack?
 
 Will it devour you?
@@ -589,60 +590,60 @@ You close your eyes.
 "
 
 [node name="Continue" type="Node" parent="HungryMovesToward"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../Devour")
 continue_right = NodePath("../../Devour")
 
 [node name="Devour" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "After a minute, you realize you still haven't taken up residence in the cub's stomach. In fact, it seems to be laying next to you.
 
 The only growls are coming from its stomach, now. It seems tired and weak. Maybe there will be some more food on the way. You decide to stand up and make your way forward."
 
 [node name="Continue" type="Node" parent="Devour"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../Follows")
 continue_right = NodePath("../../Follows")
 
 [node name="Fight" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "Your brother spoke of wild bandits roaming these areas. You are your friend were prepared to take on any aggressor."
 
 [node name="Continue" type="Node" parent="Fight"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../Laughter")
 continue_right = NodePath("../../Laughter")
 
 [node name="Protect" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You weren't sure what was coming, but your main instinct was to protect your new friend. You look around the trees for a place to hide, but come up empty."
 
 [node name="Continue" type="Node" parent="Protect"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../Laughter")
 continue_right = NodePath("../../Laughter")
 
 [node name=" CubAttack" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "Your cub runs forward and bites the bandit in front, the blood running from his fangs. The man let out a scream and kicked your friend aside with a menacing look on his face."
 
 [node name="Continue" type="Node" parent=" CubAttack"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../Whimper")
 continue_right = NodePath("../../Whimper")
 
 [node name="QuietCub" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "A gentle tap to the nose, you try to quiet your friend. 
 
 \"They could be more bandits, we can't let them know we're here.\"
@@ -650,14 +651,14 @@ text_description = "A gentle tap to the nose, you try to quiet your friend.
 Your cub friend recoils slightly, but catches the sincerity in your eyes and stands ready to protect. The music thuds onward, getting louder."
 
 [node name="Continue" type="Node" parent="QuietCub"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../MusicSource")
 continue_right = NodePath("../../MusicSource")
 
 [node name=" CubProtect" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "The cub stands forward to protect you, standing between you and the bandits.
 
 \"Come back!\" you yell, your friend coming over to your side obediently. 
@@ -665,192 +666,192 @@ text_description = "The cub stands forward to protect you, standing between you 
 He still leans forward, ready. So do you."
 
 [node name="Continue" type="Node" parent=" CubProtect"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../DrawingSwords")
 continue_right = NodePath("../../DrawingSwords")
 
 [node name=" KeepLocket" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You clutch the locket on your chest, closing your eyes and tears running down. 
 
 \"It's my family! I can't just give it up to some... bandits!\"
 "
 
 [node name="Continue" type="Node" parent=" KeepLocket"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../Laugh")
 continue_right = NodePath("../../Laugh")
 
 [node name=" GiveLocket" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You close your eyes, grab your locket from around your neck and hold it out. The locket isn't what matters, it's being able to move forward."
 
 [node name="Continue" type="Node" parent=" GiveLocket"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../DrawingSwords")
 continue_right = NodePath("../../DrawingSwords")
 
 [node name="Laugh" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You hear them let out another laugh."
 
 [node name="Continue" type="Node" parent="Laugh"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../DrawingSwords")
 continue_right = NodePath("../../DrawingSwords")
 
 [node name="Whimper" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You friend runs to your side with a whimper."
 
 [node name="Continue" type="Node" parent="Whimper"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../DrawingSwords")
 continue_right = NodePath("../../DrawingSwords")
 
 [node name="TakeSword" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You take the sword in your hands, ready to take on any more bandits that come your way."
 
 [node name="Continue" type="Node" parent="TakeSword"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../TakeFood")
 continue_right = NodePath("../../TakeFood")
 
 [node name="HideSword" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "Not wanting anyone else to have these terrible weapons, you hide them in a hollowed out tree a little ways off the road. On the way back, you spot enormous footprints unlike anything you've seen before."
 
 [node name="Continue" type="Node" parent="HideSword"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../TakeFood")
 continue_right = NodePath("../../TakeFood")
 
 [node name="Hide" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You remember the words of your brother, the recent run-in with bandits, and realize the best option really is to avoid these strange encounters. Your friend wearily whimpering, you dart your eyes around to find a place to hide."
 
 [node name="Continue" type="Node" parent="Hide"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../NoHide")
 continue_right = NodePath("../../NoHide")
 
 [node name="NoHide" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "A brief panic sets in and you realize you wouldn't be able to get to a hiding place safely. The figure looms onward, suddenly seeming taller and bigger than you had originally anticipated. 
 
 It wears something on its back. A backpack? It looks far too big for that. What could it be? You don't have time to consider anymore before you find yourself wandering forward toward them."
 
 [node name="Continue" type="Node" parent="NoHide"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../UpCloseMerchant")
 continue_right = NodePath("../../UpCloseMerchant")
 
 [node name="Leash" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You take the collar and leash, and bend down to equip your friend. He seems a bit apprehensive, but takes to it quickly. He seems happy to obey and stay close, wanting for freedom a little less and comforted by the bond."
 
 [node name="Continue" type="Node" parent="Leash"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../Library")
 continue_right = NodePath("../../Library")
 
 [node name="Treat" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You decide your friend has stood loyal for this long, and deserves a treat. You reach out and grab the sizzling sirloin - apprehensive, but it seems to be just the right temperature to handle. 
 
 You toss it to your friend who devours it excitedly, taking a small nibble for yourself. He spins in a circle, his tongue dangling wildly in excitement."
 
 [node name="Continue" type="Node" parent="Treat"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../MerchantTavern")
 continue_right = NodePath("../../MerchantTavern")
 
 [node name="Nothing" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "The merchant understands your hesitation and respects your decision. Moving past you awkwardly, the merchant leaves you - leaving a wide space between the two of you. When you look back, the merchant is gone."
 
 [node name="Continue" type="Node" parent="Nothing"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../SmallClearing")
 continue_right = NodePath("../../SmallClearing")
 
 [node name="Library" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "The merchant bows awkwardly and moves off. You notice a tiny library on the side of the giant backpack on the merchant with a few mice reading books upside down. They seem deeply engrossed."
 
 [node name="Continue" type="Node" parent="Library"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../SmallClearing")
 continue_right = NodePath("../../SmallClearing")
 
 [node name="SmallClearingMouse" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "The merchant bows awkwardly again, revealing a small outdoor tavern this time with mice enjoying a handful of seeds and fermented berries, the sound of violins and bells ringing out from the pack. 
 
 The figure stumbles forward, its awkward gate seemingly pushing it forward more than walking. When you turn around, you see it has gone through a layer of dense fog."
 
 [node name="Continue" type="Node" parent="SmallClearingMouse"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../ApproachFountainMouse")
 continue_right = NodePath("../../ApproachFountainMouse")
 
 [node name="MerchantTavernMouse" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "The merchant bows awkwardly again, revealing a small outdoor tavern this time with mice enjoying a handful of seeds and fermented berries, the sound of violins and bells ringing out from the pack. 
 
 The figure stumbles forward, its awkward gate seemingly pushing it forward more than walking. When you turn around, you see it has gone through a layer of dense fog."
 
 [node name="Continue" type="Node" parent="MerchantTavernMouse"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../SmallClearingMouse")
 continue_right = NodePath("../../SmallClearingMouse")
 
 [node name="ApproachFountainMouse" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You approach the fountain, your friends staring intently at the mysterious form. As you get closer, it comes into full view - solid, yet ethereal. You notice now that your breath has been visible from the evening cold, but the closer you get the less your breath clouds ahead, the warmer you feel.
 
 Your cub friend turns his head. Your mouse friend, camping out on your shoulder, tugs on a hair tuft and points at it. She lets out a series of highly well thought out squeaks that you don't quite understand."
 
 [node name="Continue" type="Node" parent="ApproachFountainMouse"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../ReachOutMouse")
 continue_right = NodePath("../../ReachOutMouse")
 
 [node name="ReachOutMouse" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You reach out a hand to touch it, and the stonework is warm and wet. The drips are warm to the touch and the pool reflects the stars and swirls above. It feels… inviting. It’s asking for something, something meaningful.
 
 It wants to help with your journey. You feel throughout your whole body that it wants your locket.
@@ -858,21 +859,21 @@ It wants to help with your journey. You feel throughout your whole body that it 
 Your mouse friend reaches out, interested in cleaning off the cheese coating she seems to be wrapped in like a smelly blanket."
 
 [node name="Child" type="Node" parent="ReachOutMouse"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = " I tossed the smelly mouse into the water from afar.'"
 right_text = " We all hopped into the fountain together.'"
 continue_left = NodePath("../../TossMouse")
 continue_right = NodePath("../../TogetherMouse")
 
 [node name="Family" type="Node" parent="ReachOutMouse"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = " I set up camp beside the fountain.'"
 right_text = " I tossed my locket into the fountain.'"
 continue_left = NodePath("../../CampMouse")
 continue_right = NodePath("../../PlaceLocketMouse")
 
 [node name="TossMouse" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You throw the mouse into the fountain, not wanting to test the waters yourself. She lets out an excited SQEEEEEK! and achieves perfect form while diving into the waters.
 
 Your cub friend jumps in to join, and the two splash and play with eachother, the mouse riding the cub like a boat.
@@ -880,88 +881,88 @@ Your cub friend jumps in to join, and the two splash and play with eachother, th
 You stay out to keep warm."
 
 [node name="Continue" type="Node" parent="TossMouse"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../WakeUp")
 continue_right = NodePath("../../WakeUp")
 
 [node name="TogetherMouse" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You smile at the strange sight, less strange now after the encounters you've had so far. You decide to give in, and with a knowing glance around your group, you all jump into the fountain. 
 
 A gentle steam rises from it and it warms you, protecting you from the night's cold. You laugh, splash, and play."
 
 [node name="Continue" type="Node" parent="TogetherMouse"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../WarmSteam")
 continue_right = NodePath("../../WarmSteam")
 
 [node name="CampMouse" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You decide to listen to the stories your brother told of the faeries and their dangerous illusions. You avoid the fountain and setup camp nearby. 
 
 Your friends join beside you, your cheese smelling mouse sitting down on your cub friend, the sounds of the forest lulling you to sleep."
 
 [node name="Continue" type="Node" parent="CampMouse"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../WakeUp")
 continue_right = NodePath("../../WakeUp")
 
 [node name="WakeUp" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "When you wake up, the fountain is gone."
 
 [node name="CampFear" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You can't understand the ethereal nature of the fountain, and it terrifies you. To take refuge in the trees and protect your cub friend. 
 
 Setting up camp under cover of leaves and the cool moon, you rest.
 "
 
 [node name="Continue" type="Node" parent="CampFear"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../WakeUp")
 continue_right = NodePath("../../WakeUp")
 
 [node name="TogetherCub" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You smile at the strange sight, less strange now after the encounters you've had so far. You decide to give in, and with a knowing glance to your friend, you both jump into the fountain. 
 
 A gentle steam rises from it and it warms you, protecting you from the night's cold. You laugh, splash, and play."
 
 [node name="Continue" type="Node" parent="TogetherCub"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../WarmSteam")
 continue_right = NodePath("../../WarmSteam")
 
 [node name="CampCub" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "You decide to listen to the stories your brother told of the faeries and their dangerous illusions. You avoid the fountain and setup camp nearby. 
 
 Your friend joins you, cuddling together to stay warm."
 
 [node name="Continue" type="Node" parent="CampCub"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../WakeUp")
 continue_right = NodePath("../../WakeUp")
 
 [node name="PlaceLocket" type="Node" parent="."]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 text_description = "Something compels you to place the locket in the water. It’s your family locket, you can’t lose it, but it feels safe. As soon as the metal touches the liquids, they bubble and spurt upwards, surrounding the clearing with steam. You step back, and your friend lets out a curious whine."
 
 [node name="Continue" type="Node" parent="PlaceLocket"]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 left_text = "Go on..."
 right_text = "Go on..."
 continue_left = NodePath("../../WarmSteam")

@@ -46,10 +46,11 @@ func update_page(page:Page):
 		#TODO : add the continue card textures here
 		cards_container.add_child(card)
 	else:
+		print("master.gd -- Initiating Cards ")
 		for page_card in page.get_cards():
 			var card = player_card.instance()
 			card.card_id = page_card.id
 			cards_container.add_child(card)
-			print(card.card_id)
+			print("master.gd creating --- ",card.card_id)
 		
 

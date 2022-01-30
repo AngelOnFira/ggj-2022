@@ -15,10 +15,3 @@ func _init(id, left_text, right_text, left_pointer, right_pointer):
 	self.right_pointer = right_pointer
 	self.id = id
 
-
-func print_data():
-	print(self.left_text)
-	print(self.right_text)
-	print(self.left_pointer)
-	print(self.right_pointer)
-	print(self.id)

@@ -58,7 +58,6 @@ func update_page(page: Page):
 		card.rect_scale = Vector2(0.5, 0.5)
 
 		# Set the art on the card
-		print("card ", card.card_id)
 		card.set_card_type(card.card_id)
 
 		print("master.gd creating --- ", page_card)

@@ -31,6 +31,8 @@ func set_card_type(id: String):
 	for child in $Card.get_children():
 		child.hide()
 
+	print("Trying to show ", id)
+
 	# Show the requested child
 	$Card.get_node(id).show()
 

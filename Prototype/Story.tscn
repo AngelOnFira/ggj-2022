@@ -16,69 +16,63 @@ export(NodePath) var continue_right
 [node name="Story" type="Node"]
 script = ExtResource( 1 )
 
-[node name="Menu" type="Node" parent="."]
-
-[node name="MenuStory" type="Node" parent="Menu"]
+[node name="MenuStory" type="Node" parent="."]
 script = ExtResource( 4 )
 text_description = "It's a dreary day at home. You can go outside maybe?"
 
-[node name="LeavingTown" type="Node" parent="."]
-
-[node name="TownStory" type="Node" parent="LeavingTown"]
+[node name="TownStory" type="Node" parent="."]
 script = ExtResource( 4 )
 text_description = "You are a young girl, sick of the sameness of your village. It's plain, ordinary, and all around too dull for your growing sensibilities. You want excitement, to see what's out there in the world. It has to be more exciting than this. You've heard tells of a wise hermit, a retired adventurer, living just through the forest. One bright and sunny day you pack your bags, hug your family, take your family locket and some food, and make your way to the forest."
 
-[node name="VillageBoundaries" type="Node" parent="LeavingTown"]
+[node name="VillageBoundaries" type="Node" parent="."]
 script = ExtResource( 4 )
 text_description = "Leaving the village boundaries, you feel flush. You aren't sure if it is excitement or anxiety, fear or curiosity. You follow the road past some worn down houses on the outskirts of town; nobody lives here anymore. You used to play here with your brother when you were younger, but he grew up. He became part of the village guard, and warned her away from these houses.
 
 \"All sorts out there,\" he'd say. \"It's not as safe as it was.\""
 
-[node name="WarmthSun" type="Node" parent="LeavingTown"]
+[node name="WarmthSun" type="Node" parent="."]
 script = ExtResource( 4 )
 text_description = "You feel the warmth of the sun overhead as it comes up over the hills. As you approach the forest, the smells of flowers and morning dew is overwhelming, but fills you with a sense of calm and wonder."
 
-[node name="EdgeForest" type="Node" parent="LeavingTown"]
+[node name="EdgeForest" type="Node" parent="."]
 script = ExtResource( 4 )
 text_description = "You stand at the edge of the forest, looking both ways and seeing it stretch out forever. A chill runs up your back, sweat finds its way to your brow. You look through your bags one last time, \"Do I need to go back? Did I forget something,\" you ask yourself. Food, locket, water, teas, a bedroll, some camping equipment. You're all set, but you feel so unprepared."
 
-[node name="WolfCub" type="Node" parent="LeavingTown/EdgeForest"]
+[node name="WolfCub" type="Node" parent="EdgeForest"]
 script = SubResource( 1 )
 left_text = "The wolf goes on the beaten path to the left."
 right_text = "The wolf goes on the beaten path to the right."
 continue_left = NodePath("../../ForestFear")
 continue_right = NodePath("../../ForestCurious")
 
-[node name="ForestFear" type="Node" parent="LeavingTown"]
+[node name="ForestFear" type="Node" parent="."]
 script = ExtResource( 4 )
 text_description = "You hear the terrible sounds and it sends a shiver down your spine. You know there's no turning back now, but the hesitant is strong."
 
-[node name="Continue" type="Node" parent="LeavingTown/ForestFear"]
+[node name="Continue" type="Node" parent="ForestFear"]
 script = SubResource( 1 )
 left_text = "The wolf goes on the beaten path to the left."
 right_text = "The wolf goes on the beaten path to the right."
 continue_left = NodePath("../../HearBirds")
 continue_right = NodePath("../../HearBirds")
 
-[node name="ForestCurious" type="Node" parent="LeavingTown"]
+[node name="ForestCurious" type="Node" parent="."]
 script = ExtResource( 4 )
 text_description = "You set your fears aside; the forest is so beautiful, the cool wind calms your nerves. It's time to press on."
 
-[node name="Continue" type="Node" parent="LeavingTown/ForestCurious"]
+[node name="Continue" type="Node" parent="ForestCurious"]
 script = SubResource( 1 )
 left_text = "The wolf goes on the beaten path to the left."
 right_text = "The wolf goes on the beaten path to the right."
 continue_left = NodePath("../../HearBirds")
 continue_right = NodePath("../../HearBirds")
 
-[node name="HearBirds" type="Node" parent="LeavingTown"]
+[node name="HearBirds" type="Node" parent="."]
 script = ExtResource( 4 )
 text_description = "You take your first steps into the forest.
 
  You hear the songs of the birds, the rustling of leaves, the trickling of a nearby creak. It's serene and surreal. It isn't long before you hear a growling. You suddenly feel like you're falling, spinning on your feet. What could it be?"
 
 [node name="EndGame" type="Node" parent="."]
-
-[node name="EndGame" type="Node" parent="EndGame"]
 script = ExtResource( 4 )
 text_description = "The game is over!"

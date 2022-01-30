@@ -49,6 +49,8 @@ func update_page(page: Page):
 
 	# Add new cards
 	print("master.gd -- Initiating Cards ")
+	print(page)
+	print(page.get_cards())
 	for page_card in page.get_cards():
 		var card = player_card.instance()
 		card.card_id = page_card.id
@@ -59,6 +61,7 @@ func update_page(page: Page):
 
 		# Set the art on the card
 		print("card ", card.card_id)
+		var temp = page.get_cards()
 		card.set_card_type(card.card_id)
 
 		print("master.gd creating --- ", page_card)

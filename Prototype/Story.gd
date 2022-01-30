@@ -84,5 +84,5 @@ func run_tests():
 
 # Get the initial page of the story, and set it internally
 func initial_page():
-	self.current_page = self.get_child(0).get_child(0)
+	self.current_page = self.get_child(0)
 	return self.current_page

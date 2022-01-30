@@ -17,6 +17,8 @@ var next_page: Node
 func _ready():
 	set_card_data()
 	self.add_to_group("pages")
+	print(self.name)
+	print(_card_data)
 
 
 # Transitions to the next page specified by the next_page
@@ -59,11 +61,11 @@ func set_card_data():
 
 	for child in self.get_children():
 		self._card_data[child.name] = CardData.new(  # The left action  # The right action
-			child.left_text, child.right_text, child.continue_left, child.continue_right, child.name
+			child.name, child.left_text, child.right_text, child.continue_left, child.continue_right
 		)
 
-	if self._card_data == {}:
-		self._card_data = CardData.new(DEFUALT_ID, "Go on...", "Go on...", null, null)
+	if len(self._card_data) == 0:
+		self._card_data[DEFUALT_ID] = CardData.new(DEFUALT_ID, "Go on...", "Go on...", NodePath(), NodePath())
 
 
 func get_story():

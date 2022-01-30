@@ -47,10 +47,16 @@ func take_action(card_name: String, side: String):
 
 	# Card : We have a card as a child with the card name
 	else:
+		print("1", card.name)
+		print("1", card.continue_left)
+		print(get_node(card.continue_left))
 		if side == "left":
-			self.next_page = card.continue_left
+			self.next_page = card.get_node(card.continue_left)
 		elif side == "right":
-			self.next_page = card.continue_right
+			self.next_page = card.get_node(card.continue_right)
+
+	if self.next_page == null:
+		print("Next page is still null!")
 
 	_change_page()
 
@@ -65,7 +71,9 @@ func set_card_data():
 		)
 
 	if len(self._card_data) == 0:
-		self._card_data[DEFUALT_ID] = CardData.new(DEFUALT_ID, "Go on...", "Go on...", NodePath(), NodePath())
+		self._card_data[DEFUALT_ID] = CardData.new(
+			DEFUALT_ID, "Go on...", "Go on...", NodePath(), NodePath()
+		)
 
 
 func get_story():

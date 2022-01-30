@@ -14,8 +14,6 @@ func _ready():
 	for page in self.get_tree().get_nodes_in_group("pages"):
 		page.connect("page_changed", self, "update_page")
 
-	# self.get_tree().call_group("pages","connect","page_changed",self,"update_page")
-
 	# Start the game by getting the first page
 	self.update_page($Story.initial_page())
 

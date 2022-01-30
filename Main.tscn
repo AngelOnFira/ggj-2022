@@ -86,10 +86,9 @@ __meta__ = {
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="PlayerCards"]
-margin_left = 410.0
-margin_top = 75.0
-margin_right = 614.0
-margin_bottom = 225.0
+margin_left = 310.0
+margin_right = 714.0
+margin_bottom = 300.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 __meta__ = {
@@ -99,14 +98,14 @@ __meta__ = {
 [node name="Card" parent="PlayerCards/HBoxContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 100.0
-margin_bottom = 150.0
+margin_right = 200.0
+margin_bottom = 300.0
 card_id = "child"
 
 [node name="Card2" parent="PlayerCards/HBoxContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 104.0
-margin_right = 204.0
-margin_bottom = 150.0
+margin_left = 204.0
+margin_right = 404.0
+margin_bottom = 300.0
 card_id = "wolf"

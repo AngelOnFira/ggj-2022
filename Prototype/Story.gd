@@ -3,10 +3,16 @@ extends Node
 var current_page:Page = null
 
 func _ready():
+	# run_tests()
+
+	pass
+
+func run_tests():
 	# Make sure each child has a script, and the expected members
 	for child in self.get_children():
 		print("")
 		
+		# Tests to make sure pages are set up right
 		# Check for script
 		# if child.get_script() == null:
 		# 	print("Error! {child} has no script!".format({"child": child.name}))
@@ -32,6 +38,7 @@ func _ready():
 	print("Story Begins!")
 	print("")
 
+	# A chapter the direct child of the story root
 	for chapter in self.get_children():
 		# Pages
 		
@@ -72,3 +79,8 @@ func _ready():
 		# Slow down so we can see all the debug text without Godot clipping
 		# it
 #		yield(get_tree().create_timer(0.05), "timeout")
+
+# Get the initial page of the story, and set it internally
+func initial_page():
+	self.current_page = self.get_child(0).get_child(0)
+	return self.current_page

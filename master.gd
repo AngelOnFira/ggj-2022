@@ -9,22 +9,17 @@ const DECISION_RIGHT:NodePath = NodePath("VBoxContainer/CardSlots/DecisionAreaRi
 
 var current_page:Page = null
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	for page in self.get_tree().get_nodes_in_group("pages"):
 		page.connect("page_changed",self,"update_page")
 
-	# Replace with function body.
 	# self.get_tree().call_group("pages","connect","page_changed",self,"update_page")
-	self.update_page($Story.current_page)
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta):
-	pass
+	# Start the game by getting the first page
+	self.update_page($Story.initial_page())
 
 # Signal reciever from a card getting a button pressed
 func card_action(action: String, card: String):
-
 	print("group_call on : CardManager -- card_action -- ",action," ",card)
 	self.current_page.take_action(card, action)
 	pass

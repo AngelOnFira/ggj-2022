@@ -66,19 +66,6 @@ margin_bottom = 400.0
 rect_min_size = Vector2( 0, 400 )
 decision = "left"
 
-[node name="CPUParticles2D" type="CPUParticles2D" parent="VBoxContainer/CardSlots/DecisionAreaLeft"]
-position = Vector2( 166, 342 )
-amount = 20
-emission_shape = 2
-emission_rect_extents = Vector2( 107.838, 16.699 )
-direction = Vector2( 0, 0 )
-gravity = Vector2( 0, -100 )
-angular_velocity = 301.22
-angular_velocity_random = 0.65
-orbit_velocity_random = 0.45
-radial_accel_random = 0.55
-angle_random = 0.42
-
 [node name="Control" type="Control" parent="VBoxContainer/CardSlots"]
 margin_left = 362.0
 margin_right = 662.0

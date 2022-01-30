@@ -56,3 +56,4 @@ func new_card_mouse_hover(card:Control,deck_card:Control):
 	self.child_cards.append(card)
 	self.add_child(card)
 	self.action = ""
+	self.is_in_area = false

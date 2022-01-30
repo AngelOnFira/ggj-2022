@@ -1,10 +1,12 @@
+
+
 {
   "passages": [
     {
-      "text": "You are a young girl, sick of the sameness of your village. It's plain, ordinary, and all around too dull for your growing sensibilities. You want excitement, to see what's out there in the world. It has to be more exciting than this. You've heard tells of a wise hermit, a retired adventurer, living just through the forest. One bright and sunny day you pack your bags, hug your family, take your family locket and some food, and make your way to the forest.\n[[Continue->Boundaries]]",
+      "text": "You are a young girl, sick of the sameness of your village. It's plain, ordinary, and all around too dull for your growing sensibilities. You want excitement, to see what's out there in the world. It has to be more exciting than this. You've heard tells of a wise hermit, a retired adventurer, living just through the forest. One bright and sunny day you pack your bags, hug your family, take your family locket and some food, and make your way to the forest.",
       "links": [
         {
-",\n[[Continue->Boundaries]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "Boundaries",
           "pid": "2"
         }
@@ -17,10 +19,10 @@
       }
     },
     {
-      "text": "Leaving the village boundaries, you feel flush. You aren't sure if it is excitement or anxiety, fear or curiosity. You follow the road past some worn down houses on the outskirts of town; nobody lives here anymore. You used to play here with your brother when you were younger, but he grew up. He became part of the village guard, and warned her away from these houses.\n\n\"All sorts out there,\" he'd say. \"It's not as safe as it was.\"\n[[`(Family) It felt weird`->GoodReason]]\n[[`(Family) It felt right`->NewHorizons]]",
+      "text": "Leaving the village boundaries, you feel flush. You aren't sure if it is excitement or anxiety, fear or curiosity. You follow the road past some worn down houses on the outskirts of town; nobody lives here anymore. You used to play here with your brother when you were younger, but he grew up. He became part of the village guard, and warned her away from these houses.\n\n\"All sorts out there,\" he'd say. \"It's not as safe as it was.\"",
       "links": [
         {
-",\n\n\"All sorts out there,\" he'd say. \"It's not as safe as it was.\"\n[[`(Family) It felt weird`->GoodReason]]\n[[`(Family) It felt right`->NewHorizons]]", ",          "name": "`(Family) It felt weird`",
+          "name": "`(Family) It felt weird`",
           "link": "GoodReason",
           "pid": "42"
         },
@@ -38,10 +40,10 @@
       }
     },
     {
-      "text": "You feel the warmth of the sun overhead as it comes up over the hills. As you approach the forest, the smells of flowers and morning dew is overwhelming, but fills you with a sense of calm and wonder.\n[[Continue->ForestEdge]]",
+      "text": "You feel the warmth of the sun overhead as it comes up over the hills. As you approach the forest, the smells of flowers and morning dew is overwhelming, but fills you with a sense of calm and wonder.",
       "links": [
         {
-",\n[[Continue->ForestEdge]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "ForestEdge",
           "pid": "4"
         }
@@ -54,10 +56,10 @@
       }
     },
     {
-      "text": "You stand at the edge of the forest, looking both ways and seeing it stretch out forever. A chill runs up your back, sweat finds its way to your brow. You look through your bags one last time, \"Do I need to go back? Did I forget something,\" you ask yourself. Food, locket, water, teas, a bedroll, some camping equipment. You're all set, but you feel so unprepared.\n[['(Child) 'I was afraid->ForestAfraid]]\n[['(Child) 'I was curious->ForestCurious]]",
+      "text": "You stand at the edge of the forest, looking both ways and seeing it stretch out forever. A chill runs up your back, sweat finds its way to your brow. You look through your bags one last time, \"Do I need to go back? Did I forget something,\" you ask yourself. Food, locket, water, teas, a bedroll, some camping equipment. You're all set, but you feel so unprepared.",
       "links": [
         {
-",\n[['(Child) 'I was afraid->ForestAfraid]]\n[['(Child) 'I was curious->ForestCurious]]", ",          "name": "'(Child) 'I was afraid",
+          "name": "'(Child) 'I was afraid",
           "link": "ForestAfraid",
           "pid": "5"
         },
@@ -75,10 +77,10 @@
       }
     },
     {
-      "text": "The sounds and sights terrify you. It's already darker here, on the forest edge. You have to walk on, but it feels like you're entering the mouth of a giant, and you may not make it out.\n[[Continue->FirstSteps]]",
+      "text": "The sounds and sights terrify you. It's already darker here, on the forest edge. You have to walk on, but it feels like you're entering the mouth of a giant, and you may not make it out.",
       "links": [
         {
-",\n[[Continue->FirstSteps]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "FirstSteps",
           "pid": "7"
         }
@@ -91,10 +93,10 @@
       }
     },
     {
-      "text": "No. You're packed, you're ready. It isn't so scary, the trees are beautiful, the smells alluring. What waits beyond this point? You're excited to find out.\n[[Continue->FirstSteps]] ",
+      "text": "No. You're packed, you're ready. It isn't so scary, the trees are beautiful, the smells alluring. What waits beyond this point? You're excited to find out.",
       "links": [
         {
-",\n[[Continue->FirstSteps]] ", ",          "name": "Continue",
+          "name": "Continue",
           "link": "FirstSteps",
           "pid": "7"
         }
@@ -107,10 +109,10 @@
       }
     },
     {
-      "text": "You take your first steps into the forest.\n\n You hear the songs of the birds, the rustling of leaves, the trickling of a nearby creak. It's serene and surreal. It isn't long before you hear a growling. \n \n A small panic sets in. You suddenly feel like you're falling, spinning on your feet. \n \n What could it be?\n[[Continue->FirstMonster]]",
+      "text": "You take your first steps into the forest.\n\n You hear the songs of the birds, the rustling of leaves, the trickling of a nearby creak. It's serene and surreal. It isn't long before you hear a growling. \n \n A small panic sets in. You suddenly feel like you're falling, spinning on your feet. \n \n What could it be?",
       "links": [
         {
-",\n\n You hear the songs of the birds, the rus ",          "name": "Continue",
+          "name": "Continue",
           "link": "FirstMonster",
           "pid": "8"
         }
@@ -123,10 +125,10 @@
       }
     },
     {
-      "text": "It turns out, the first monster you encounter is your own hunger. You laugh it off, sit down by a tree, and begin to prepare your lunch. You pull some nuts and berries and a few dried meats. There isn't much to spare, so you have to eat light.\n\nBefore your first bite, another growl - this time it isn't you.\n[[Continue->Howl]]",
+      "text": "It turns out, the first monster you encounter is your own hunger. You laugh it off, sit down by a tree, and begin to prepare your lunch. You pull some nuts and berries and a few dried meats. There isn't much to spare, so you have to eat light.\n\nBefore your first bite, another growl - this time it isn't you.",
       "links": [
         {
-",\n\nBefore your first bite, another growl - this time it isn't you.\n[[Continue->Howl]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "Howl",
           "pid": "9"
         }
@@ -139,10 +141,10 @@
       }
     },
     {
-      "text": "You see the eyes peering out from the trees. You feel vulnerable out in the open, but somehow safe in the knowledge that whatever is out there has to show itself before claiming its lunch. You begin to put your food away when you hear the howl.\n[['(Child) It terrified me'->Terrified]]\n[['(Child) Was it friendly?'->Curious]]",
+      "text": "You see the eyes peering out from the trees. You feel vulnerable out in the open, but somehow safe in the knowledge that whatever is out there has to show itself before claiming its lunch. You begin to put your food away when you hear the howl.",
       "links": [
         {
-",\n[['(Child) It terrified me'->Terrified]]\n[['(Child) Was it friendly?'->Curious]]", ",          "name": "'(Child) It terrified me'",
+          "name": "'(Child) It terrified me'",
           "link": "Terrified",
           "pid": "44"
         },
@@ -160,10 +162,10 @@
       }
     },
     {
-      "text": "“Awoooooooo,” the shadow in the trees howled. It’s a wolf, there’s no doubt about that, but it doesn’t sound like the ones that the guards protect us from. It sounds smaller, maybe even sick. Small or sick, the growling still sets you on edge.\n[[Continue->WolfCub]]",
+      "text": "“Awoooooooo,” the shadow in the trees howled. It’s a wolf, there’s no doubt about that, but it doesn’t sound like the ones that the guards protect us from. It sounds smaller, maybe even sick. Small or sick, the growling still sets you on edge.",
       "links": [
         {
-",\n[[Continue->WolfCub]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "WolfCub",
           "pid": "11"
         }
@@ -176,10 +178,10 @@
       }
     },
     {
-      "text": "You see the wolf cub come out of the forest, eyes wide with a terrible look - as terrible as this little guy could muster at least. You stand still as it approaches, unsure of what to do next. It hasn’t attacked yet, instead standing its ground.\n[['(Stablemaster) I gave some food.'->FeedWolf]]\n[['(Stablemaster) I quickly ate.'->FeedSelf]]",
+      "text": "You see the wolf cub come out of the forest, eyes wide with a terrible look - as terrible as this little guy could muster at least. You stand still as it approaches, unsure of what to do next. It hasn’t attacked yet, instead standing its ground.",
       "links": [
         {
-",\n[['(Stablemaster) I gave some food.'->FeedWolf]]\n[['(Stablemaster) I quickly ate.'->FeedSelf]]", ",          "name": "'(Stablemaster) I gave some food.'",
+          "name": "'(Stablemaster) I gave some food.'",
           "link": "FeedWolf",
           "pid": "12"
         },
@@ -197,10 +199,10 @@
       }
     },
     {
-      "text": "Coming out of your frozen state, you look down at your hand and realize you’re still holding the salted meats your father packed for you. You throw it on the ground in front of you, hoping to show it that you can be friends.\n\nThe terrible look on the cub melts away. It runs and devours the meat, licking the ground below it when it’s gone.\n\nIt moves toward you, a look in its eyes, but what is it? Was the food not enough?\n[[Continue->FriendlyMovesToward]]",
+      "text": "Coming out of your frozen state, you look down at your hand and realize you’re still holding the salted meats your father packed for you. You throw it on the ground in front of you, hoping to show it that you can be friends.\n\nThe terrible look on the cub melts away. It runs and devours the meat, licking the ground below it when it’s gone.\n\nIt moves toward you, a look in its eyes, but what is it? Was the food not enough?",
       "links": [
         {
-",\n\nThe terrible look on the cub melts away. It runs and devours the meat, licking the ground below it when it’s gone.\n\nIt moves toward you, a look in its eyes, but what is it? Was the food not enough?\n[[Continue->FriendlyMo ",          "name": "Continue",
+          "name": "Continue",
           "link": "FriendlyMovesToward",
           "pid": "13"
         }
@@ -213,10 +215,10 @@
       }
     },
     {
-      "text": "It moves toward you, a look in its eyes, but what is it? Was the food not enough?\n\nFreezing again, you close your eyes in fear, until you feel a warm weight on your lap. You open your eyes and the wolf cub is looking up at you from your lap, tongue hanging out with a wild smile on its face, breath reeking of meat and mud. \n[[Continue->FriendlySitting]]",
+      "text": "It moves toward you, a look in its eyes, but what is it? Was the food not enough?\n\nFreezing again, you close your eyes in fear, until you feel a warm weight on your lap. You open your eyes and the wolf cub is looking up at you from your lap, tongue hanging out with a wild smile on its face, breath reeking of meat and mud. ",
       "links": [
         {
-",\n\nFreezing again, you close your eyes in fear, until you feel a warm weight on you ",          "name": "Continue",
+          "name": "Continue",
           "link": "FriendlySitting",
           "pid": "14"
         }
@@ -229,10 +231,10 @@
       }
     },
     {
-      "text": "You sit with the wolf cub and it rests, and you decide to take a moment to rest, too. When you wake, the wolf cub wakes as well. You begin to pack your things, your stomach still growling, and set off.\n[[Continue->Follows]]",
+      "text": "You sit with the wolf cub and it rests, and you decide to take a moment to rest, too. When you wake, the wolf cub wakes as well. You begin to pack your things, your stomach still growling, and set off.",
       "links": [
         {
-",\n[[Continue->Follows]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "Follows",
           "pid": "15"
         }
@@ -245,10 +247,10 @@
       }
     },
     {
-      "text": "The wolf cub follows.\n[[Continue->Berries]]",
+      "text": "The wolf cub follows.",
       "links": [
         {
-",\n[[Continue->Berries]]" ",          "name": "Continue",
+          "name": "Continue",
           "link": "Berries",
           "pid": "16"
         }
@@ -261,10 +263,10 @@
       }
     },
     {
-      "text": "With your new friend close by your side, you still have a growling stomach to contend with. You continue to wander the straight path through the trees. You collect a few berries you know to be safe to eat, but they don’t do much to sate your stomachs. You have to be careful not to waste too many supplies.\n[[Continue->OldCampsites]]",
+      "text": "With your new friend close by your side, you still have a growling stomach to contend with. You continue to wander the straight path through the trees. You collect a few berries you know to be safe to eat, but they don’t do much to sate your stomachs. You have to be careful not to waste too many supplies.",
       "links": [
         {
-",\n[[Continue->OldCampsites]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "OldCampsites",
           "pid": "17"
         }
@@ -277,10 +279,10 @@
       }
     },
     {
-      "text": "Along the way you notice the remnants of old campsites. Torn and empty pouches, broken lanterns, the charred remains of fires. You know these paths are frequented by traders and the hunters who come with them, which hopefully explains the dried blood on the trees. At least you think it’s blood, but the sun is harder to see in this part of the forest. You would barely recognize the path if it weren’t for the occasional waypoint stones. The grass and moss has overrun most of it, now that the merchants have stopped coming this way.\n[[Continue->Hooves]]",
+      "text": "Along the way you notice the remnants of old campsites. Torn and empty pouches, broken lanterns, the charred remains of fires. You know these paths are frequented by traders and the hunters who come with them, which hopefully explains the dried blood on the trees. At least you think it’s blood, but the sun is harder to see in this part of the forest. You would barely recognize the path if it weren’t for the occasional waypoint stones. The grass and moss has overrun most of it, now that the merchants have stopped coming this way.",
       "links": [
         {
-",\n[[Continue->Hooves]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "Hooves",
           "pid": "18"
         }
@@ -293,10 +295,10 @@
       }
     },
     {
-      "text": "Or… had they? You hear the click-clacking of hooves, the jingling of wares, and some loud discussion between people. You can’t quite make out what they’re saying, or how far their voices are echoing, but you know they are getting closer.\n[['(Cub) I was ready to fight.'->Fight]]\n[['(Cub) I was ready to protect.'->Protect]]",
+      "text": "Or… had they? You hear the click-clacking of hooves, the jingling of wares, and some loud discussion between people. You can’t quite make out what they’re saying, or how far their voices are echoing, but you know they are getting closer.",
       "links": [
         {
-",\n[['(Cub) I was ready to fight.'->Fight]]\n[['(Cub) I was ready to protect.'->Protect]]", ",          "name": "'(Cub) I was ready to fight.'",
+          "name": "'(Cub) I was ready to fight.'",
           "link": "Fight",
           "pid": "49"
         },
@@ -314,10 +316,10 @@
       }
     },
     {
-      "text": "Laughter - loud, boisterous laughter arises from the approaching men. One of them must have told a pretty funny joke. Your friend walks slower and begins to trail behind, growling gently with distrust.\n\nYou see the men, looking unlike any traders you’ve sever seen before. Their faces are covered, wearing some kind of goggles and face cloths, with thick beards protruding from below their chins.\n[[Continue->Locket]]",
+      "text": "Laughter - loud, boisterous laughter arises from the approaching men. One of them must have told a pretty funny joke. Your friend walks slower and begins to trail behind, growling gently with distrust.\n\nYou see the men, looking unlike any traders you’ve sever seen before. Their faces are covered, wearing some kind of goggles and face cloths, with thick beards protruding from below their chins.",
       "links": [
         {
-",\n\nYou see the men, looking unlike any traders you’ve sever seen before. Their faces are covered, wearing some kind of goggles and face cloths, with thick beards protruding from below their chins.\n[[Con ",          "name": "Continue",
+          "name": "Continue",
           "link": "Locket",
           "pid": "20"
         }
@@ -330,10 +332,10 @@
       }
     },
     {
-      "text": "They stop before you, and something seems to have caught their eye.\n\n“Locket,” a voice beckons. You couldn’t tell who was talking, and they all raised their arms to point in unison. “Locket,” they began to say together. “Locket!” they howled, their goggles reflecting the reddening sun. Their wild and dirty gray hair seems to rise upward like a ragged mane.\n[[Continue->CryOut]]",
+      "text": "They stop before you, and something seems to have caught their eye.\n\n“Locket,” a voice beckons. You couldn’t tell who was talking, and they all raised their arms to point in unison. “Locket,” they began to say together. “Locket!” they howled, their goggles reflecting the reddening sun. Their wild and dirty gray hair seems to rise upward like a ragged mane.",
       "links": [
         {
-",\n\n“Locket,” a voice beckons. You couldn’t tell who was talking, and  ",          "name": "Continue",
+          "name": "Continue",
           "link": "CryOut",
           "pid": "21"
         }
@@ -346,10 +348,10 @@
       }
     },
     {
-      "text": "You throw your hand to your chest, clutching your family’s locket, the metal cold from the forest’s shadows.\n\nYou close your eyes again, unsure of how to continue. \n\n“Why? Who are you? What do you want?” you yell.\n\n“LOCKET, YOUNG ONE!” they scream, sending the birds that were sleeping in the trees high into the sky. “LOCKET!”\n[['(Cub) My friend attacked.' -> CubAttack]]\n[['(Cub) My friend stood guard before me.' -> CubProtect]]\n[['(Family) I couldn't part with my locket.' -> KeepLocket]]\n[['(Family) I was ready to give up that part of me.' -> GiveLocket]]",
+      "text": "You throw your hand to your chest, clutching your family’s locket, the metal cold from the forest’s shadows.\n\nYou close your eyes again, unsure of how to continue. \n\n“Why? Who are you? What do you want?” you yell.\n\n“LOCKET, YOUNG ONE!” they scream, sending the birds that were sleeping in the trees high into the sky. “LOCKET!”",
       "links": [
         {
-",\n\nYou close your eyes again, unsure of how to continue. \n\n“Why? Who are you? What do you want?” you yell.\n ",          "name": "'(Cub) My friend attacked.' ",
+          "name": "'(Cub) My friend attacked.' ",
           "link": " CubAttack",
           "pid": "51"
         },
@@ -363,7 +365,7 @@
           "link": " KeepLocket",
           "pid": "54"
         },
-KeepLocket        {
+        {
           "name": "'(Family) I was ready to give up that part of me.' ",
           "link": " GiveLocket",
           "pid": "55"
@@ -377,10 +379,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "Drawing swords, the men begin to walk around you. Your friend stands guard while the men laugh and howl. You fall down to one knee behind your furry friend and give it a hug. The laughing stops.\n[[Continue->OpenEyes]]",
+      "text": "Drawing swords, the men begin to walk around you. Your friend stands guard while the men laugh and howl. You fall down to one knee behind your furry friend and give it a hug. The laughing stops.",
       "links": [
         {
-",\n[[Continue->OpenEyes]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "OpenEyes",
           "pid": "23"
         }
@@ -393,10 +395,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You open your eyes and see the mules the men had behind them are standing alone. You spin around, scanning the trees for any sign of the bandits. Nothing. Just a sense of calming reassurance. You see the trees rustle through a ray of light shining between the trees and catch a glimpse of something tall and furry wandering away, bobbing from side to side. What happened?\n[[Continue->Mules]]",
+      "text": "You open your eyes and see the mules the men had behind them are standing alone. You spin around, scanning the trees for any sign of the bandits. Nothing. Just a sense of calming reassurance. You see the trees rustle through a ray of light shining between the trees and catch a glimpse of something tall and furry wandering away, bobbing from side to side. What happened?",
       "links": [
         {
-",\n[[Continue->Mules]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "Mules",
           "pid": "24"
         }
@@ -409,10 +411,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "The mules begin to walk past you and toward the village, some bread and fruits falling from its side beside the metal swords laying on the ground.\n[['(Cub) I took a sword from the ground.'->TakeSword]]\n[['(Cub) I hid the weapons in a bush.'->HideSword]]",
+      "text": "The mules begin to walk past you and toward the village, some bread and fruits falling from its side beside the metal swords laying on the ground.",
       "links": [
         {
-",\n[['(Cub) I took a sword from the ground.'->TakeSword]]\n[['(Cub) I hid the weapons in a bush.'->HideSword]]", ",          "name": "'(Cub) I took a sword from the ground.'",
+          "name": "'(Cub) I took a sword from the ground.'",
           "link": "TakeSword",
           "pid": "58"
         },
@@ -430,10 +432,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "Finally, you walk over the the food - there's more than you expected! You can't even carry it all. You and your friend sit down, take a moment, and reflect on what just happened.\n\nAnd both of your stomachs finally get to rest.\n[[Continue->MerchantOne]]",
+      "text": "Finally, you walk over the the food - there's more than you expected! You can't even carry it all. You and your friend sit down, take a moment, and reflect on what just happened.\n\nAnd both of your stomachs finally get to rest.",
       "links": [
         {
-",\n\nAnd both of your stomachs finally get to rest.\n[[Continue->MerchantOne]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "MerchantOne",
           "pid": "26"
         }
@@ -446,10 +448,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "Weary from your encounter, you keep down the road. The trees grow taller, the din of wildlife seems to fade away and only the crunching of your feet and the happy snarls of your furry friend remain. \n[[Continue->Stars]]",
+      "text": "Weary from your encounter, you keep down the road. The trees grow taller, the din of wildlife seems to fade away and only the crunching of your feet and the happy snarls of your furry friend remain. ",
       "links": [
         {
-",\n[[Continue->Stars]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "Stars",
           "pid": "27"
         }
@@ -462,10 +464,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "The day begins to turn to night and glimpses through the trees shows the clear orange sky morphing into a wondrous flurry of heavenly shapes and lights. Swirling colours and dots of glowing white explode in the sky while the moon hides itself in a waning crescent. The wind howls through the trees in what sounds like a woodwind concert singing directly to you.\n[[Continue->Music]]",
+      "text": "The day begins to turn to night and glimpses through the trees shows the clear orange sky morphing into a wondrous flurry of heavenly shapes and lights. Swirling colours and dots of glowing white explode in the sky while the moon hides itself in a waning crescent. The wind howls through the trees in what sounds like a woodwind concert singing directly to you.",
       "links": [
         {
-",\n[[Continue->Music]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "Music",
           "pid": "28"
         }
@@ -478,10 +480,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "The music continues, but suddenly it stops sounding just like wind - bells and drums, a light murmuring and jingling. A caravan? More bandits? Are you just hearing things? The sounds of an active tavern and high-pitched, undecipherable conversations loom closer. Your friend lets out some concern.\n[['(Stablemaster) I quieted the cub.'->QuietCub]]\n[['(Stablemaster) I comforted the cub.'->ComfortWolf]]",
+      "text": "The music continues, but suddenly it stops sounding just like wind - bells and drums, a light murmuring and jingling. A caravan? More bandits? Are you just hearing things? The sounds of an active tavern and high-pitched, undecipherable conversations loom closer. Your friend lets out some concern.",
       "links": [
         {
-",\n[['(Stablemaster) I quieted the cub.'->QuietCub]]\n[['(Stablemaster) I comforted the cub.'->ComfortWolf]]", ",          "name": "'(Stablemaster) I quieted the cub.'",
+          "name": "'(Stablemaster) I quieted the cub.'",
           "link": "QuietCub",
           "pid": "52"
         },
@@ -499,10 +501,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You decide to bend down and comfort your friend with some gentle pats to the head and some scratches under his ear. He lets out an affectionate warble and rubs against you. The music gets closer, harmonizing with the wind.\n[[Continue->MusicSource]]",
+      "text": "You decide to bend down and comfort your friend with some gentle pats to the head and some scratches under his ear. He lets out an affectionate warble and rubs against you. The music gets closer, harmonizing with the wind.",
       "links": [
         {
-",\n[[Continue->MusicSource]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "MusicSource",
           "pid": "30"
         }
@@ -515,10 +517,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You see the source of the music wandering toward - a lone cloaked figure wanders stiffly before you. Its cloak bounces as it trails behind. Outwardly its movements are stable, yet somehow it still seems totally erratic; neither as still as the town monks, nor as wild as the bandits; yet not at all like the ordinary people. \n\n[['(Family) I tried to hide from the stranger.'->Hide]]\n[['(Family) I waved to the stranger.'->Wave]]",
+      "text": "You see the source of the music wandering toward - a lone cloaked figure wanders stiffly before you. Its cloak bounces as it trails behind. Outwardly its movements are stable, yet somehow it still seems totally erratic; neither as still as the town monks, nor as wild as the bandits; yet not at all like the ordinary people. \n",
       "links": [
         {
-",\n\n[['(Family) I tried to hide from the stranger.'->Hide]]\n[['(Family) I waved to the stranger.'->Wave]]", ",          "name": "'(Family) I tried to hide from the stranger.'",
+          "name": "'(Family) I tried to hide from the stranger.'",
           "link": "Hide",
           "pid": "60"
         },
@@ -536,10 +538,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You stand tall with your friend and raise a hand to wave at the traveler, feeling a sinking feeling in you while you do it. The traveler’s wrist seems to rise independent of the rest of their arm. As they step into the moon’s gaze, you suddenly notice an enormous backpack protruding from their back; how could you have missed it! \n\nIt towers high and wide, the cloak covered in bright colours and shining metals. There’s a smell you can’t quite place, like spoiled milks and wet dog. \n[[Continue->UpCloseMerchant]]",
+      "text": "You stand tall with your friend and raise a hand to wave at the traveler, feeling a sinking feeling in you while you do it. The traveler’s wrist seems to rise independent of the rest of their arm. As they step into the moon’s gaze, you suddenly notice an enormous backpack protruding from their back; how could you have missed it! \n\nIt towers high and wide, the cloak covered in bright colours and shining metals. There’s a smell you can’t quite place, like spoiled milks and wet dog. ",
       "links": [
         {
-",\n\nIt towers high and wide, the cloak covered in bright colours and shining metals. There’s a smell you can’t quite place, like spoiled milks and wet dog. \n[[Continue->UpCloseMerchant]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "UpCloseMerchant",
           "pid": "32"
         }
@@ -552,10 +554,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You walk toward the traveler and come face to face with a shadow - but all along its shoulders you see small creatures roaming back and forth, in and out of the backpack. No… not a backpack; you see tiny bridges, buildings - is that a water wheel? Small mice of all colours chase each other around the arms of the stranger, who now holds them out wide. Hanging from his arms are various items on strings.\n[[Continue->Offers]]",
+      "text": "You walk toward the traveler and come face to face with a shadow - but all along its shoulders you see small creatures roaming back and forth, in and out of the backpack. No… not a backpack; you see tiny bridges, buildings - is that a water wheel? Small mice of all colours chase each other around the arms of the stranger, who now holds them out wide. Hanging from his arms are various items on strings.",
       "links": [
         {
-",\n[[Continue->Offers]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "Offers",
           "pid": "33"
         }
@@ -568,10 +570,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "Dangling from the figure is a number of wares. Your friend seems completely taken by the somehow sizzling sirloin dangling from a twine made with delicious herbs. Beside it is a collar and leash which could help keep your friend by your side when things get tough.\n\nIt's impossible not to notice that one of the wares is moving! At first glance it was a wedge of cheese, but hanging off of it is a small grey mouse having a very difficult time holding on. Despite its struggle, it's happily indulging itself on its feast.\n\n“Are you offering me one of these?” you ask. The stranger gives a stiff bow.\n\n[['(Stablemaster) I reached for the collar and leash.'->Leash]]\n[['(Stablemaster) I thought my friend deserved a nice meaty treat.'->Treat]]\n[['(Child) The sight was so overwhelming, I backed away.'->Nothing]]\n[['(Child) I reached out to help the struggling mouse.'->GetMouse]]",
+      "text": "Dangling from the figure is a number of wares. Your friend seems completely taken by the somehow sizzling sirloin dangling from a twine made with delicious herbs. Beside it is a collar and leash which could help keep your friend by your side when things get tough.\n\nIt's impossible not to notice that one of the wares is moving! At first glance it was a wedge of cheese, but hanging off of it is a small grey mouse having a very difficult time holding on. Despite its struggle, it's happily indulging itself on its feast.\n\n“Are you offering me one of these?” you ask. The stranger gives a stiff bow.\n",
       "links": [
         {
-",\n\nIt's impossible not to notice that one of the wares is moving! At first glance it was a wedge of cheese, but hanging off of it is a small grey mouse having a very difficult time holding on. Despite its struggle, it's happily indulging itself on its feast.\n\n“Are ",          "name": "'(Stablemaster) I reached for the collar and leash.'",
+          "name": "'(Stablemaster) I reached for the collar and leash.'",
           "link": "Leash",
           "pid": "62"
         },
@@ -599,10 +601,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "The mouse looks up at you and lets out a squeak, reaching out back at you! Smiling, you reach toward it and it runs up your arm excitedly. It sits on your shoulder, tickling under your ear with one paw and pointing at the cheese with the other. You pull the cheese off the string and feed it to the mouse. \n[[Continue->MerchantTavernMouse]]",
+      "text": "The mouse looks up at you and lets out a squeak, reaching out back at you! Smiling, you reach toward it and it runs up your arm excitedly. It sits on your shoulder, tickling under your ear with one paw and pointing at the cheese with the other. You pull the cheese off the string and feed it to the mouse. ",
       "links": [
         {
-",\n[[Continue->MerchantTavernMouse]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "MerchantTavernMouse",
           "pid": "67"
         }
@@ -615,10 +617,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "The merchant bows awkwardly again, revealing a small outdoor tavern this time with mice enjoying a handful of seeds and fermented berries, the sound of violins and bells ringing out from the pack. \n\nThe figure stumbles forward, its awkward gate seemingly pushing it forward more than walking. When you turn around, you see it has gone through a layer of dense fog.\n[[Continue->SmallClearing]]",
+      "text": "The merchant bows awkwardly again, revealing a small outdoor tavern this time with mice enjoying a handful of seeds and fermented berries, the sound of violins and bells ringing out from the pack. \n\nThe figure stumbles forward, its awkward gate seemingly pushing it forward more than walking. When you turn around, you see it has gone through a layer of dense fog.",
       "links": [
         {
-",\n\nThe figure stumbles forward, its awkward gate seemingly pushing it forward more than walking. When you turn around, you see it has gone through a layer of dense fog.\n[[Continue->SmallClearing]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "SmallClearing",
           "pid": "36"
         }
@@ -631,10 +633,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You see a small clearing up ahead where the moon shines down more brightly. You hear the flowing of a creek up ahead, and decide you should go much further to set up camp. You make your way into the clearing and realize it wasn’t a creek at all; visible only in the brightest rays, the faint image of a fountain begins to take form. \n[[Continue->ApproachFountain]]",
+      "text": "You see a small clearing up ahead where the moon shines down more brightly. You hear the flowing of a creek up ahead, and decide you should go much further to set up camp. You make your way into the clearing and realize it wasn’t a creek at all; visible only in the brightest rays, the faint image of a fountain begins to take form. ",
       "links": [
         {
-",\n[[Continue->ApproachFountain]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "ApproachFountain",
           "pid": "37"
         }
@@ -647,10 +649,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You approach the fountain, your friend staring intently at the mysterious form. As you get closer, it comes into full view - solid, yet ethereal. You notice now that your breath has been visible from the evening cold, but the closer you get the less your breath clouds ahead, the warmer you feel.\n\nYour friend turns his head.\n[[Continue->ReachOut]]",
+      "text": "You approach the fountain, your friend staring intently at the mysterious form. As you get closer, it comes into full view - solid, yet ethereal. You notice now that your breath has been visible from the evening cold, but the closer you get the less your breath clouds ahead, the warmer you feel.\n\nYour friend turns his head.",
       "links": [
         {
-",\n\nYour friend turns his head.\n[[Continue->ReachOut]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "ReachOut",
           "pid": "38"
         }
@@ -663,10 +665,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You reach out a hand to touch it, and the stonework is warm and wet. The drips are warm to the touch and the pool reflects the stars and swirls above. It feels… inviting. It’s asking for something, something meaningful.\n\nIt wants to help with your journey. You feel throughout your whole body that it wants your locket.\n\n[['(Child) I was afraid of the fountain.'->CampFear]]\n[['(Child) We both hopped into the fountain together.'->TogetherCub]]\n[['(Family) I set up camp beside the fountain.'->CampCub]]\n[['(Family) I tossed my locket into the fountain.'->PlaceLocket]]",
+      "text": "You reach out a hand to touch it, and the stonework is warm and wet. The drips are warm to the touch and the pool reflects the stars and swirls above. It feels… inviting. It’s asking for something, something meaningful.\n\nIt wants to help with your journey. You feel throughout your whole body that it wants your locket.\n",
       "links": [
         {
-",\n\nIt wants to help with your journey. You feel throughout your whole body that it wants your locket.\n\n[['(Child) I was afraid of the fountain.'->CampFear]]\n[['(Child) We both hopped into the fountain together.'->Toget ",          "name": "'(Child) I was afraid of the fountain.'",
+          "name": "'(Child) I was afraid of the fountain.'",
           "link": "CampFear",
           "pid": "74"
         },
@@ -694,10 +696,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "Something compels you to place the locket in the water. It’s your family locket, you can’t lose it, but it feels safe. As soon as the metal touches the liquids, they bubble and spurt upwards, surrounding the clearing with steam. You step back, and your animal friends give out respective cries.\n[[Continue->WarmSteam]]",
+      "text": "Something compels you to place the locket in the water. It’s your family locket, you can’t lose it, but it feels safe. As soon as the metal touches the liquids, they bubble and spurt upwards, surrounding the clearing with steam. You step back, and your animal friends give out respective cries.",
       "links": [
         {
-",\n[[Continue->WarmSteam]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "WarmSteam",
           "pid": "40"
         }
@@ -710,10 +712,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "The warm steam envelops you, and you feel an overwhelming contentment, detached but perfectly connected. The fountain is gone, the steam surrounds the clearing, and you’re left standing in the middle of the warm fog. \n[[Continue->ProtectedWarm]]",
+      "text": "The warm steam envelops you, and you feel an overwhelming contentment, detached but perfectly connected. The fountain is gone, the steam surrounds the clearing, and you’re left standing in the middle of the warm fog. ",
       "links": [
         {
-",\n[[Continue->ProtectedWarm]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "ProtectedWarm",
           "pid": "41"
         }
@@ -726,10 +728,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "Protected and warm, your friends lay down to sleep. You put down your bedroll and join them.\n[[Continue->WakeUp]] ",
+      "text": "Protected and warm, your friends lay down to sleep. You put down your bedroll and join them.",
       "links": [
         {
-",\n[[Continue->WakeUp]] ", ",          "name": "Continue",
+          "name": "Continue",
           "link": "WakeUp",
           "pid": "73"
         }
@@ -742,10 +744,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "He knows what he's talking about. You know you'll need to be careful going forward. It feels strange to be going against his warnings like this.\n[[Continue->Warmth]]",
+      "text": "He knows what he's talking about. You know you'll need to be careful going forward. It feels strange to be going against his warnings like this.",
       "links": [
         {
-",\n[[Continue->Warmth]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "Warmth",
           "pid": "3"
         }
@@ -758,10 +760,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You know he had good intentions, but you also feel it's right for people to go out and explore again. Being cooped up in the village isn't a way to be.\n[[Continue->Warmth]]",
+      "text": "You know he had good intentions, but you also feel it's right for people to go out and explore again. Being cooped up in the village isn't a way to be.",
       "links": [
         {
-",\n[[Continue->Warmth]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "Warmth",
           "pid": "3"
         }
@@ -774,10 +776,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "The sound sends shivers down your spine. A thousand possibilities run through your head, and none of them good.\n[[Continue->Awoo]]",
+      "text": "The sound sends shivers down your spine. A thousand possibilities run through your head, and none of them good.",
       "links": [
         {
-",\n[[Continue->Awoo]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "Awoo",
           "pid": "10"
         }
@@ -790,10 +792,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You're hungry, maybe it's just lost and hungry, too. You should be afraid, but the prospect of a new friend piques your curiosity.\n[[Continue->Awoo]]",
+      "text": "You're hungry, maybe it's just lost and hungry, too. You should be afraid, but the prospect of a new friend piques your curiosity.",
       "links": [
         {
-",\n[[Continue->Awoo]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "Awoo",
           "pid": "10"
         }
@@ -806,10 +808,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You manage to get your wits and realize the danger of holding meats with a hungry wolf before you. You can't show weakness.\n\nYou hastily eat the meat, hoping to prevent an attack and keep your strength. \n[[Continue->HungryMovesToward]]",
+      "text": "You manage to get your wits and realize the danger of holding meats with a hungry wolf before you. You can't show weakness.\n\nYou hastily eat the meat, hoping to prevent an attack and keep your strength. ",
       "links": [
         {
-",\n\nYou hastily eat the meat, hoping to prevent an attack and keep your strength. \n[[Continue->HungryMovesToward]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "HungryMovesToward",
           "pid": "47"
         }
@@ -822,10 +824,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "It moves toward you, a terrible look in its eyes. Will it devour your pack?\n\nWill it devour you?\n\nYou close your eyes.\n\n[[Continue->Devour]]",
+      "text": "It moves toward you, a terrible look in its eyes. Will it devour your pack?\n\nWill it devour you?\n\nYou close your eyes.\n",
       "links": [
         {
-",\n\nWill it devour you?\n\nYou close your eyes.\n\n[[Continue->Devour]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "Devour",
           "pid": "48"
         }
@@ -838,10 +840,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "After a minute, you realize you still haven't taken up residence in the cub's stomach. In fact, it seems to be laying next to you.\n\nThe only growls are coming from its stomach, now. It seems tired and weak. Maybe there will be some more food on the way. You decide to stand up and make your way forward.\n[[Continue->Follows]]",
+      "text": "After a minute, you realize you still haven't taken up residence in the cub's stomach. In fact, it seems to be laying next to you.\n\nThe only growls are coming from its stomach, now. It seems tired and weak. Maybe there will be some more food on the way. You decide to stand up and make your way forward.",
       "links": [
         {
-",\n\nThe only growls are coming from its stomach, now. It seems tired and weak. Maybe there will be some more food on the way. You dec ",          "name": "Continue",
+          "name": "Continue",
           "link": "Follows",
           "pid": "15"
         }
@@ -854,10 +856,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "Your brother spoke of wild bandits roaming these areas. You are your friend were prepared to take on any aggressor.\n[[Continue->Laughter]] ",
+      "text": "Your brother spoke of wild bandits roaming these areas. You are your friend were prepared to take on any aggressor.",
       "links": [
         {
-",\n[[Continue->Laughter]] ", ",          "name": "Continue",
+          "name": "Continue",
           "link": "Laughter",
           "pid": "19"
         }
@@ -870,10 +872,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You weren't sure what was coming, but your main instinct was to protect your new friend. You look around the trees for a place to hide, but come up empty.\n[[Continue->Laughter]]",
+      "text": "You weren't sure what was coming, but your main instinct was to protect your new friend. You look around the trees for a place to hide, but come up empty.",
       "links": [
         {
-",\n[[Continue->Laughter]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "Laughter",
           "pid": "19"
         }
@@ -886,10 +888,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "Your cub runs forward and bites the bandit in front, the blood running from his fangs. The man let out a scream and kicked your friend aside with a menacing look on his face.\n[[Continue->Whimper]]",
+      "text": "Your cub runs forward and bites the bandit in front, the blood running from his fangs. The man let out a scream and kicked your friend aside with a menacing look on his face.",
       "links": [
         {
-",\n[[Continue->Whimper]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "Whimper",
           "pid": "57"
         }
@@ -902,10 +904,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "A gentle tap to the nose, you try to quiet your friend. \n\n\"They could be more bandits, we can't let them know we're here.\"\n\nYour cub friend recoils slightly, but catches the sincerity in your eyes and stands ready to protect. The music thuds onward, getting louder.\n[[Continue->MusicSource]]",
+      "text": "A gentle tap to the nose, you try to quiet your friend. \n\n\"They could be more bandits, we can't let them know we're here.\"\n\nYour cub friend recoils slightly, but catches the sincerity in your eyes and stands ready to protect. The music thuds onward, getting louder.",
       "links": [
         {
-",\n\n\"They could be more bandits, we can't let them know we ",          "name": "Continue",
+          "name": "Continue",
           "link": "MusicSource",
           "pid": "30"
         }
@@ -918,10 +920,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "The cub stands forward to protect you, standing between you and the bandits.\n\n\"Come back!\" you yell, your friend coming over to your side obediently. \n\nHe still leans forward, ready. So do you.\n[[Continue->DrawingSwords]]",
+      "text": "The cub stands forward to protect you, standing between you and the bandits.\n\n\"Come back!\" you yell, your friend coming over to your side obediently. \n\nHe still leans forward, ready. So do you.",
       "links": [
         {
-",\n\n\"Come back!\" you yell, your friend coming over to your side obediently. \ ",          "name": "Continue",
+          "name": "Continue",
           "link": "DrawingSwords",
           "pid": "22"
         }
@@ -934,10 +936,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You clutch the locket on your chest, closing your eyes and tears running down. \n\n\"It's my family! I can't just give it up to some... bandits!\"\n\n[[Continue->Laugh]]",
+      "text": "You clutch the locket on your chest, closing your eyes and tears running down. \n\n\"It's my family! I can't just give it up to some... bandits!\"\n",
       "links": [
         {
-",\n\n\"It's my family! I can't just give it up to some... bandits!\"\n\n[[Continue- ",          "name": "Continue",
+          "name": "Continue",
           "link": "Laugh",
           "pid": "56"
         }
@@ -950,10 +952,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You close your eyes, grab your locket from around your neck and hold it out. The locket isn't what matters, it's being able to move forward.\n[[Continue->DrawingSwords]]",
+      "text": "You close your eyes, grab your locket from around your neck and hold it out. The locket isn't what matters, it's being able to move forward.",
       "links": [
         {
-",\n[[Continue->DrawingSwords]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "DrawingSwords",
           "pid": "22"
         }
@@ -966,10 +968,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You hear them let out another laugh.\n[[Continue->DrawingSwords]] ",
+      "text": "You hear them let out another laugh.",
       "links": [
         {
-",\n[[Continue->DrawingSwords]] ", ",          "name": "Continue",
+          "name": "Continue",
           "link": "DrawingSwords",
           "pid": "22"
         }
@@ -982,10 +984,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You friend runs to your side with a whimper.\n[[Continue->DrawingSwords]] ",
+      "text": "You friend runs to your side with a whimper.",
       "links": [
         {
-",\n[[Continue->DrawingSwords]] ", ",          "name": "Continue",
+          "name": "Continue",
           "link": "DrawingSwords",
           "pid": "22"
         }
@@ -998,10 +1000,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You take the sword in your hands, ready to take on any more bandits that come your way.\n[[Continue->TakeFood]] ",
+      "text": "You take the sword in your hands, ready to take on any more bandits that come your way.",
       "links": [
         {
-",\n[[Continue->TakeFood]] ", ",          "name": "Continue",
+          "name": "Continue",
           "link": "TakeFood",
           "pid": "25"
         }
@@ -1014,10 +1016,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "Not wanting anyone else to have these terrible weapons, you hide them in a hollowed out tree a little ways off the road. On the way back, you spot enormous footprints unlike anything you've seen before.\n[[Continue->TakeFood]]",
+      "text": "Not wanting anyone else to have these terrible weapons, you hide them in a hollowed out tree a little ways off the road. On the way back, you spot enormous footprints unlike anything you've seen before.",
       "links": [
         {
-",\n[[Continue->TakeFood]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "TakeFood",
           "pid": "25"
         }
@@ -1030,10 +1032,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You remember the words of your brother, the recent run-in with bandits, and realize the best option really is to avoid these strange encounters. Your friend wearily whimpering, you dart your eyes around to find a place to hide.\n[[Continue->NoHide]] ",
+      "text": "You remember the words of your brother, the recent run-in with bandits, and realize the best option really is to avoid these strange encounters. Your friend wearily whimpering, you dart your eyes around to find a place to hide.",
       "links": [
         {
-",\n[[Continue->NoHide]] ", ",          "name": "Continue",
+          "name": "Continue",
           "link": "NoHide",
           "pid": "61"
         }
@@ -1046,10 +1048,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "A brief panic sets in and you realize you wouldn't be able to get to a hiding place safely. The figure looms onward, suddenly seeming taller and bigger than you had originally anticipated. \n\nIt wears something on its back. A backpack? It looks far too big for that. What could it be? You don't have time to consider anymore before you find yourself wandering forward toward them.\n[[Continue->UpCloseMerchant]] ",
+      "text": "A brief panic sets in and you realize you wouldn't be able to get to a hiding place safely. The figure looms onward, suddenly seeming taller and bigger than you had originally anticipated. \n\nIt wears something on its back. A backpack? It looks far too big for that. What could it be? You don't have time to consider anymore before you find yourself wandering forward toward them.",
       "links": [
         {
-",\n\nIt wears something on its back. A backpack? It looks far too big for that. What could it be? You don't have time to consider anymore before you find yourself wandering forward toward them. ",          "name": "Continue",
+          "name": "Continue",
           "link": "UpCloseMerchant",
           "pid": "32"
         }
@@ -1062,10 +1064,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You take the collar and leash, and bend down to equip your friend. He seems a bit apprehensive, but takes to it quickly. He seems happy to obey and stay close, wanting for freedom a little less and comforted by the bond.\n[[Library]]",
+      "text": "You take the collar and leash, and bend down to equip your friend. He seems a bit apprehensive, but takes to it quickly. He seems happy to obey and stay close, wanting for freedom a little less and comforted by the bond.",
       "links": [
         {
-",\n[[Library]]", ",          "name": "Library",
+          "name": "Library",
           "link": "Library",
           "pid": "65"
         }
@@ -1078,10 +1080,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You decide your friend has stood loyal for this long, and deserves a treat. You reach out and grab the sizzling sirloin - apprehensive, but it seems to be just the right temperature to handle. \n\nYou toss it to your friend who devours it excitedly, taking a small nibble for yourself. He spins in a circle, his tongue dangling wildly in excitement.\n[[Continue->MerchantTavern]] ",
+      "text": "You decide your friend has stood loyal for this long, and deserves a treat. You reach out and grab the sizzling sirloin - apprehensive, but it seems to be just the right temperature to handle. \n\nYou toss it to your friend who devours it excitedly, taking a small nibble for yourself. He spins in a circle, his tongue dangling wildly in excitement.",
       "links": [
         {
-",\n\nYou toss it to your friend who devours it excitedly, taking a small nibble for yourself. He spins in a circle, his tongue dangling wildly in excitement.\n[[Continue->MerchantTavern]] ", ",          "name": "Continue",
+          "name": "Continue",
           "link": "MerchantTavern",
           "pid": "35"
         }
@@ -1094,10 +1096,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "The merchant understands your hesitation and respects your decision. Moving past you awkwardly, the merchant leaves you - leaving a wide space between the two of you. When you look back, the merchant is gone.\n[[Continue->SmallClearing]] ",
+      "text": "The merchant understands your hesitation and respects your decision. Moving past you awkwardly, the merchant leaves you - leaving a wide space between the two of you. When you look back, the merchant is gone.",
       "links": [
         {
-",\n[[Continue->SmallClearing]] ", ",          "name": "Continue",
+          "name": "Continue",
           "link": "SmallClearing",
           "pid": "36"
         }
@@ -1110,10 +1112,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "The merchant bows awkwardly and moves off. You notice a tiny library on the side of the giant backpack on the merchant with a few mice reading books upside down. They seem deeply engrossed.\n[[Continue->SmallClearing]] ",
+      "text": "The merchant bows awkwardly and moves off. You notice a tiny library on the side of the giant backpack on the merchant with a few mice reading books upside down. They seem deeply engrossed.",
       "links": [
         {
-",\n[[Continue->SmallClearing]] ", ",          "name": "Continue",
+          "name": "Continue",
           "link": "SmallClearing",
           "pid": "36"
         }
@@ -1126,10 +1128,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "The merchant bows awkwardly again, revealing a small outdoor tavern this time with mice enjoying a handful of seeds and fermented berries, the sound of violins and bells ringing out from the pack. \n\nThe figure stumbles forward, its awkward gate seemingly pushing it forward more than walking. When you turn around, you see it has gone through a layer of dense fog.\n[[Continue->ApproachFountainMouse]]",
+      "text": "The merchant bows awkwardly again, revealing a small outdoor tavern this time with mice enjoying a handful of seeds and fermented berries, the sound of violins and bells ringing out from the pack. \n\nThe figure stumbles forward, its awkward gate seemingly pushing it forward more than walking. When you turn around, you see it has gone through a layer of dense fog.",
       "links": [
         {
-",\n\nThe figure stumbles forward, its awkward gate seemingly pushing it forward more than walking. When you turn around, you see it has gone through a layer of dense fog.\n[[Continue->ApproachFountainM ",          "name": "Continue",
+          "name": "Continue",
           "link": "ApproachFountainMouse",
           "pid": "68"
         }
@@ -1142,10 +1144,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "The merchant bows awkwardly again, revealing a small outdoor tavern this time with mice enjoying a handful of seeds and fermented berries, the sound of violins and bells ringing out from the pack. \n\nThe figure stumbles forward, its awkward gate seemingly pushing it forward more than walking. When you turn around, you see it has gone through a layer of dense fog.\n[[Continue->SmallClearingMouse]]",
+      "text": "The merchant bows awkwardly again, revealing a small outdoor tavern this time with mice enjoying a handful of seeds and fermented berries, the sound of violins and bells ringing out from the pack. \n\nThe figure stumbles forward, its awkward gate seemingly pushing it forward more than walking. When you turn around, you see it has gone through a layer of dense fog.",
       "links": [
         {
-",\n\nThe figure stumbles forward, its awkward gate seemingly pushing it forward more than walking. When you turn around, you see it has gone through a layer of dense fog.\n[[Continue->SmallClearingMous ",          "name": "Continue",
+          "name": "Continue",
           "link": "SmallClearingMouse",
           "pid": "66"
         }
@@ -1158,10 +1160,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You approach the fountain, your friends staring intently at the mysterious form. As you get closer, it comes into full view - solid, yet ethereal. You notice now that your breath has been visible from the evening cold, but the closer you get the less your breath clouds ahead, the warmer you feel.\n\nYour cub friend turns his head. Your mouse friend, camping out on your shoulder, tugs on a hair tuft and points at it. She lets out a series of highly well thought out squeaks that you don't quite understand.\n[[Continue->ReachOutMouse]]",
+      "text": "You approach the fountain, your friends staring intently at the mysterious form. As you get closer, it comes into full view - solid, yet ethereal. You notice now that your breath has been visible from the evening cold, but the closer you get the less your breath clouds ahead, the warmer you feel.\n\nYour cub friend turns his head. Your mouse friend, camping out on your shoulder, tugs on a hair tuft and points at it. She lets out a series of highly well thought out squeaks that you don't quite understand.",
       "links": [
         {
-",\n\nYour cub friend turns his head. Your mouse friend, camping out on your shoulder, tugs on a hair tuft and points at it. She lets out a series of highly well thought out squeaks that you don't quite understand.\n[[Continue->ReachOutMouse]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "ReachOutMouse",
           "pid": "69"
         }
@@ -1174,10 +1176,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You reach out a hand to touch it, and the stonework is warm and wet. The drips are warm to the touch and the pool reflects the stars and swirls above. It feels… inviting. It’s asking for something, something meaningful.\n\nIt wants to help with your journey. You feel throughout your whole body that it wants your locket.\n\nYour mouse friend reaches out, interested in cleaning off the cheese coating she seems to be wrapped in like a smelly blanket.\n[['(Child) I tossed the smelly mouse into the water from afar.'->TossMouse]]\n[['(Child) We all hopped into the fountain together.'->TogetherMouse]]\n[['(Family) I set up camp beside the fountain.'->CampMouse]]\n[['(Family) I tossed my locket into the fountain.'->PlaceLocketMouse]]",
+      "text": "You reach out a hand to touch it, and the stonework is warm and wet. The drips are warm to the touch and the pool reflects the stars and swirls above. It feels… inviting. It’s asking for something, something meaningful.\n\nIt wants to help with your journey. You feel throughout your whole body that it wants your locket.\n\nYour mouse friend reaches out, interested in cleaning off the cheese coating she seems to be wrapped in like a smelly blanket.",
       "links": [
         {
-",\n\nIt wants to help with your journey. You feel throughout your whole body that it wants your locket.\n\nYour mouse friend reaches out, interested in cleaning off the cheese coating she seems to be wrapped in like a smell ",          "name": "'(Child) I tossed the smelly mouse into the water from afar.'",
+          "name": "'(Child) I tossed the smelly mouse into the water from afar.'",
           "link": "TossMouse",
           "pid": "70"
         },
@@ -1205,10 +1207,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You throw the mouse into the fountain, not wanting to test the waters yourself. She lets out an excited SQEEEEEK! and achieves perfect form while diving into the waters.\n\nYour cub friend jumps in to join, and the two splash and play with eachother, the mouse riding the cub like a boat.\n\nYou stay out to keep warm.\n[[Continue->WakeUp]] ",
+      "text": "You throw the mouse into the fountain, not wanting to test the waters yourself. She lets out an excited SQEEEEEK! and achieves perfect form while diving into the waters.\n\nYour cub friend jumps in to join, and the two splash and play with eachother, the mouse riding the cub like a boat.\n\nYou stay out to keep warm.",
       "links": [
         {
-",\n\nYour cub friend jumps in to join, and the two splash and play with eachother, the mouse riding the cub like a boat.\n\nYou stay out to keep warm.\n[[Continue->WakeUp]]  ",          "name": "Continue",
+          "name": "Continue",
           "link": "WakeUp",
           "pid": "73"
         }
@@ -1221,10 +1223,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You smile at the strange sight, less strange now after the encounters you've had so far. You decide to give in, and with a knowing glance around your group, you all jump into the fountain. \n\nA gentle steam rises from it and it warms you, protecting you from the night's cold. You laugh, splash, and play.\n[[Continue->WarmSteam]]",
+      "text": "You smile at the strange sight, less strange now after the encounters you've had so far. You decide to give in, and with a knowing glance around your group, you all jump into the fountain. \n\nA gentle steam rises from it and it warms you, protecting you from the night's cold. You laugh, splash, and play.",
       "links": [
         {
-",\n\nA gentle steam rises from it and it warms you, protecting you from the night's cold. You laugh, splash, and play.\n[[Continue->WarmSteam]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "WarmSteam",
           "pid": "40"
         }
@@ -1237,10 +1239,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You decide to listen to the stories your brother told of the faeries and their dangerous illusions. You avoid the fountain and setup camp nearby. \n\nYour friends join beside you, your cheese smelling mouse sitting down on your cub friend, the sounds of the forest lulling you to sleep.\n[[Continue->WakeUp]] ",
+      "text": "You decide to listen to the stories your brother told of the faeries and their dangerous illusions. You avoid the fountain and setup camp nearby. \n\nYour friends join beside you, your cheese smelling mouse sitting down on your cub friend, the sounds of the forest lulling you to sleep.",
       "links": [
         {
-",\n\nYour friends join beside you, your cheese smelling mouse sitting down on your cub friend, the sounds of the forest lulling you to sleep.\n[[Conti ",          "name": "Continue",
+          "name": "Continue",
           "link": "WakeUp",
           "pid": "73"
         }
@@ -1262,10 +1264,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You can't understand the ethereal nature of the fountain, and it terrifies you. To take refuge in the trees and protect your cub friend. \n\nSetting up camp under cover of leaves and the cool moon, you rest.\n\n[[Continue->WakeUp]] ",
+      "text": "You can't understand the ethereal nature of the fountain, and it terrifies you. To take refuge in the trees and protect your cub friend. \n\nSetting up camp under cover of leaves and the cool moon, you rest.\n",
       "links": [
         {
-",\n\nSetting up camp under cover of leaves and the cool moon, you rest.\n\n[[Continue->WakeUp]] ", ",          "name": "Continue",
+          "name": "Continue",
           "link": "WakeUp",
           "pid": "73"
         }
@@ -1278,10 +1280,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You smile at the strange sight, less strange now after the encounters you've had so far. You decide to give in, and with a knowing glance to your friend, you both jump into the fountain. \n\nA gentle steam rises from it and it warms you, protecting you from the night's cold. You laugh, splash, and play.\n[[Continue->WarmSteam]]",
+      "text": "You smile at the strange sight, less strange now after the encounters you've had so far. You decide to give in, and with a knowing glance to your friend, you both jump into the fountain. \n\nA gentle steam rises from it and it warms you, protecting you from the night's cold. You laugh, splash, and play.",
       "links": [
         {
-",\n\nA gentle steam rises from it and it warms you, protecting you from the night's cold. You laugh, splash, and play.\n[[Continue->WarmSteam]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "WarmSteam",
           "pid": "40"
         }
@@ -1294,10 +1296,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "You decide to listen to the stories your brother told of the faeries and their dangerous illusions. You avoid the fountain and setup camp nearby. \n\nYour friend joins you, cuddling together to stay warm.\n[[Continue->WakeUp]]",
+      "text": "You decide to listen to the stories your brother told of the faeries and their dangerous illusions. You avoid the fountain and setup camp nearby. \n\nYour friend joins you, cuddling together to stay warm.",
       "links": [
         {
-",\n\nYour friend joins you, cuddling together to stay warm.\n[[Continue->WakeUp]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "WakeUp",
           "pid": "73"
         }
@@ -1310,10 +1312,10 @@ KeepLocket        {
       }
     },
     {
-      "text": "Something compels you to place the locket in the water. It’s your family locket, you can’t lose it, but it feels safe. As soon as the metal touches the liquids, they bubble and spurt upwards, surrounding the clearing with steam. You step back, and your friend lets out a curious whine.\n[[Continue->WarmSteam]]",
+      "text": "Something compels you to place the locket in the water. It’s your family locket, you can’t lose it, but it feels safe. As soon as the metal touches the liquids, they bubble and spurt upwards, surrounding the clearing with steam. You step back, and your friend lets out a curious whine.",
       "links": [
         {
-",\n[[Continue->WarmSteam]]", ",          "name": "Continue",
+          "name": "Continue",
           "link": "WarmSteam",
           "pid": "40"
         }

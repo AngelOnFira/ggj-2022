@@ -131,7 +131,7 @@ margin_right = 193.0
 margin_bottom = 293.0
 mouse_filter = 2
 
-[node name="WolfCub" type="Control" parent="Card"]
+[node name="Cub" type="Control" parent="Card"]
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -140,7 +140,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Mountain" type="TextureRect" parent="Card/WolfCub"]
+[node name="Mountain" type="TextureRect" parent="Card/Cub"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 10 )
@@ -150,7 +150,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Stars" type="TextureRect" parent="Card/WolfCub"]
+[node name="Stars" type="TextureRect" parent="Card/Cub"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 5 )
@@ -160,7 +160,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="WolfCub" type="TextureRect" parent="Card/WolfCub"]
+[node name="WolfCub" type="TextureRect" parent="Card/Cub"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 3 )

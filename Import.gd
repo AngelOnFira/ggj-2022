@@ -2,20 +2,8 @@ tool
 extends Node
 
 export var run_import = false setget do_run_import
-# onready var card_script = preload("res://Prototype/CardComponent.gd")
 
 var file
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-# func _process(delta):
-# 	print("test2")
-# 	add_child(Node.new()).set_owner(get_tree().get_edited_scene_root())
 
 
 func import():

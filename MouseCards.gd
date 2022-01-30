@@ -61,9 +61,6 @@ func new_card_mouse_hover(card: Control, deck_card: Control):
 	self.action = ""
 	self.is_in_area = false
 
-	print(card.card_left_text)
-	print(card.card_right_text)
-
 	# Set the text on the decisions
 	var left_decision = get_parent().get_node("VBoxContainer/CardSlots/DecisionAreaLeft")
 	left_decision.set_text(card.card_left_text)

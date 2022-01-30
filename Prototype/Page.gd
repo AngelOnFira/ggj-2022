@@ -19,8 +19,6 @@ var next_page: Node
 func _ready():
 	set_card_data()
 	self.add_to_group("pages")
-	print(self.name)
-	print(_card_data)
 
 
 # Transitions to the next page specified by the next_page
@@ -49,16 +47,13 @@ func take_action(card_name: String, side: String):
 
 	# Card : We have a card as a child with the card name
 	else:
-		print("1", card.name)
-		print("1", card.continue_left)
-		print(get_node(card.continue_left))
 		if side == "left":
 			self.next_page = card.get_node(card.continue_left)
 		elif side == "right":
 			self.next_page = card.get_node(card.continue_right)
 
 	if self.next_page == null:
-		print("Next page is still null!")
+		print("Error: Next page is still null!")
 
 	_change_page()
 
@@ -83,8 +78,4 @@ func get_story():
 
 
 func get_cards():
-	# Get all the children of
-	print("card data")
-	for card in self._card_data:
-		print(card, " ", _card_data[card].print_data())
 	return self._card_data.values()

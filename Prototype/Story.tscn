@@ -44,3 +44,9 @@ script = ExtResource( 4 )
 text_description = "You take your first steps into the forest.
 
  You hear the songs of the birds, the rustling of leaves, the trickling of a nearby creak. It's serene and surreal. It isn't long before you hear a growling. You suddenly feel like you're falling, spinning on your feet. What could it be?"
+
+[node name="Menu" type="Node" parent="."]
+
+[node name="TownStory" type="Node" parent="Menu"]
+script = ExtResource( 4 )
+text_description = "You are a young girl, sick of the sameness of your village. It's plain, ordinary, and all around too dull for your growing sensibilities. You want excitement, to see what's out there in the world. It has to be more exciting than this. You've heard tells of a wise hermit, a retired adventurer, living just through the forest. One bright and sunny day you pack your bags, hug your family, take your family locket and some food, and make your way to the forest."

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WolfCub.png-5694b66654d22765f24525944bd72f5c.stex"
+path="res://.import/Fear Stage 1.png-82473c376e28a5004bf850b9f0f638b8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Card/WolfCub.png"
-dest_files=[ "res://.import/WolfCub.png-5694b66654d22765f24525944bd72f5c.stex" ]
+source_file="res://Assets/Sprites/Card/Background/Fear Stage 1.png"
+dest_files=[ "res://.import/Fear Stage 1.png-82473c376e28a5004bf850b9f0f638b8.stex" ]
 
 [params]
 

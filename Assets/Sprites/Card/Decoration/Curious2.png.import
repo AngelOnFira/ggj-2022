@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WolfCubBG.png-935b2cc60f5c73d7de66d88208f3dda9.stex"
+path="res://.import/Curious2.png-077d7a9961556e5dcfd0dc9d93ad86fe.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Card/WolfCubBG.png"
-dest_files=[ "res://.import/WolfCubBG.png-935b2cc60f5c73d7de66d88208f3dda9.stex" ]
+source_file="res://Assets/Sprites/Card/Decoration/Curious2.png"
+dest_files=[ "res://.import/Curious2.png-077d7a9961556e5dcfd0dc9d93ad86fe.stex" ]
 
 [params]
 

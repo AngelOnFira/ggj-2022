@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WolfCubStars.png-1f5f3f397532ee4f09d80ad9510c41ab.stex"
+path="res://.import/WolfCubStars.png-eb8e15a1702cb3e8c8d291b372215320.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Card/WolfCubStars.png"
-dest_files=[ "res://.import/WolfCubStars.png-1f5f3f397532ee4f09d80ad9510c41ab.stex" ]
+source_file="res://Assets/Sprites/Card/WolfCub/WolfCubStars.png"
+dest_files=[ "res://.import/WolfCubStars.png-eb8e15a1702cb3e8c8d291b372215320.stex" ]
 
 [params]
 

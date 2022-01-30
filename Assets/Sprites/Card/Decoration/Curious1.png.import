@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/CardCircle.png-3b82eead647cd54a74dafcc591044389.stex"
+path="res://.import/Curious1.png-b21707a3d47973e069f5689751c79949.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Card/CardCircle.png"
-dest_files=[ "res://.import/CardCircle.png-3b82eead647cd54a74dafcc591044389.stex" ]
+source_file="res://Assets/Sprites/Card/Decoration/Curious1.png"
+dest_files=[ "res://.import/Curious1.png-b21707a3d47973e069f5689751c79949.stex" ]
 
 [params]
 

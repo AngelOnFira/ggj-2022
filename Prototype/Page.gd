@@ -66,7 +66,7 @@ func set_card_data():
 	if len(cards) == 0:
 		_card_data["Continue"] = CardData.new("Continue", "", "", continue_default, continue_default)
 	if len(cards) == 1:
-		_card_data[cards[0]] = CardData.new(cards[0], card_consultations[1], card_consultations[2], continue_left, continue_right)
+		_card_data[cards[0]] = CardData.new(cards[0], card_consultations[0][0], card_consultations[0][1], continue_left, continue_right)
 	
 func get_story():
 	return self.text_description

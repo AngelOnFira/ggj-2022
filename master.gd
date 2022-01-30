@@ -22,9 +22,6 @@ func _process(_delta):
 
 # Signal reciever from a card getting a button pressed
 func card_action(action: String, card: String):
-	# If there was no action, do nothing
-	if action == "":
-		return
 
 	print("group_call on : CardManager -- card_action -- ",action," ",card)
 	self.current_page.take_action(card, action)
@@ -49,12 +46,11 @@ func update_page(page:Page):
 		#TODO : add the continue card textures here
 		cards_container.add_child(card)
 	else:
+		print("master.gd -- Initiating Cards ")
 		for page_card in page.get_cards():
 			var card = player_card.instance()
 			card.card_id = page_card.id
 			cards_container.add_child(card)
-		pass
-	
-	# TODO Add new cards then update page text
-	# for card in self.current_page
+			print("master.gd creating --- ",card.card_id)
+		
 

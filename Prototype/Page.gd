@@ -2,6 +2,8 @@ extends Node
 class_name Page
 
 signal page_changed(page)
+signal action_taken(page, card, side)
+
 const DEFUALT_ID: String = "Continue"
 
 export(String, MULTILINE) var text_description
@@ -25,12 +27,12 @@ func _ready():
 func _change_page():
 	emit_signal("page_changed", self.next_page)
 
-
 # Override to Specify next_page and apply any state logic
 # Side is a string represented as either "left" or "right"
 func take_action(card_name: String, side: String):
 	# This should be a node, or null for "Continue"
 	var card: Node = self.get_node_or_null(NodePath(card_name))
+	emit_signal("action_taken", self.name, card_name, side)
 
 	# Defualt : continue action
 	if card == null:

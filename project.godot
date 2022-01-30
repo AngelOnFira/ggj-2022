@@ -30,6 +30,10 @@ config/name="GGJ-2022"
 run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Blackboard="*res://Blackboard.gd"
+
 [input]
 
 mouse={

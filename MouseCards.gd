@@ -29,6 +29,12 @@ func _process(_delta):
 		deck_cards = []
 		child_cards = []
 
+		# Hide text from the decisions
+		# This is pretty buggy, it only works against cards in the row
+		var card_slots = get_parent().get_node("VBoxContainer/CardSlots")
+		card_slots.get_node("DecisionAreaLeft").hide_text()
+		card_slots.get_node("DecisionAreaRight").hide_text()
+
 
 func enter_area(action_parm: String, caller_node: Node):
 	if len(deck_cards) > 0:
@@ -44,9 +50,13 @@ func exit_area(caller_node: Node):
 
 # A card has just been picked up
 func new_card_mouse_hover(card: Control, deck_card: Control):
+	# Set the position to mouse
 	card.set_position(Vector2(-card.get_rect().size.x / 2, -card.get_rect().size.y / 2))
+
+	# Add the card and the duplicate to arrays
 	self.deck_cards.append(deck_card)
 	self.child_cards.append(card)
+
 	self.add_child(card)
 	self.action = ""
 	self.is_in_area = false

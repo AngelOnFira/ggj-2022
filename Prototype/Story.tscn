@@ -1,7 +1,17 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Prototype/Story.gd" type="Script" id=1]
 [ext_resource path="res://Prototype/Page.gd" type="Script" id=4]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Node
+
+export(String, MULTILINE) var left_text
+export(String, MULTILINE) var right_text
+
+export(NodePath) var continue_left
+export(NodePath) var continue_right
+"
 
 [node name="Story" type="Node"]
 script = ExtResource( 1 )
@@ -11,7 +21,6 @@ script = ExtResource( 1 )
 [node name="MenuStory" type="Node" parent="Menu"]
 script = ExtResource( 4 )
 text_description = "It's a dreary day at home. You can go outside maybe?"
-card_consultations = [ [ "Not today", "Choose adventure!" ] ]
 
 [node name="LeavingTown" type="Node" parent="."]
 
@@ -32,20 +41,35 @@ text_description = "You feel the warmth of the sun overhead as it comes up over 
 [node name="EdgeForest" type="Node" parent="LeavingTown"]
 script = ExtResource( 4 )
 text_description = "You stand at the edge of the forest, looking both ways and seeing it stretch out forever. A chill runs up your back, sweat finds its way to your brow. You look through your bags one last time, \"Do I need to go back? Did I forget something,\" you ask yourself. Food, locket, water, teas, a bedroll, some camping equipment. You're all set, but you feel so unprepared."
-cards = [ "wolf" ]
-card_consultations = [ [ "The wolf goes on the beaten path to the left.", "The wolf goes on the beaten path to the right." ] ]
-continue_left = NodePath("../ForestFear")
-continue_right = NodePath("../ForestCurious")
+
+[node name="WolfCub" type="Node" parent="LeavingTown/EdgeForest"]
+script = SubResource( 1 )
+left_text = "The wolf goes on the beaten path to the left."
+right_text = "The wolf goes on the beaten path to the right."
+continue_left = NodePath("../../ForestFear")
+continue_right = NodePath("../../ForestCurious")
 
 [node name="ForestFear" type="Node" parent="LeavingTown"]
 script = ExtResource( 4 )
 text_description = "You hear the terrible sounds and it sends a shiver down your spine. You know there's no turning back now, but the hesitant is strong."
-continue_default = NodePath("../HearBirds")
+
+[node name="Continue" type="Node" parent="LeavingTown/ForestFear"]
+script = SubResource( 1 )
+left_text = "The wolf goes on the beaten path to the left."
+right_text = "The wolf goes on the beaten path to the right."
+continue_left = NodePath("../../HearBirds")
+continue_right = NodePath("../../HearBirds")
 
 [node name="ForestCurious" type="Node" parent="LeavingTown"]
 script = ExtResource( 4 )
 text_description = "You set your fears aside; the forest is so beautiful, the cool wind calms your nerves. It's time to press on."
-continue_default = NodePath("../HearBirds")
+
+[node name="Continue" type="Node" parent="LeavingTown/ForestCurious"]
+script = SubResource( 1 )
+left_text = "The wolf goes on the beaten path to the left."
+right_text = "The wolf goes on the beaten path to the right."
+continue_left = NodePath("../../HearBirds")
+continue_right = NodePath("../../HearBirds")
 
 [node name="HearBirds" type="Node" parent="LeavingTown"]
 script = ExtResource( 4 )

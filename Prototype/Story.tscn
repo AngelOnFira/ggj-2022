@@ -7,6 +7,16 @@
 [node name="Story" type="Node"]
 script = ExtResource( 1 )
 
+[node name="Menu" type="Node" parent="."]
+script = ExtResource( 4 )
+
+[node name="Continue" type="Node" parent="Menu"]
+script = ExtResource( 2 )
+left_text = "Embark on the tale!"
+right_text = "On to adventure!"
+continue_left = NodePath("../../Leaving")
+continue_right = NodePath("../../Leaving")
+
 [node name="Leaving" type="Node" parent="."]
 script = ExtResource( 4 )
 text_description = "You are a young girl, sick of the sameness of your village. It's plain, ordinary, and all around too dull for your growing sensibilities. You want excitement, to see what's out there in the world. It has to be more exciting than this. You've heard tells of a wise hermit, a retired adventurer, living just through the forest. One bright and sunny day you pack your bags, hug your family, take your family locket and some food, and make your way to the forest."

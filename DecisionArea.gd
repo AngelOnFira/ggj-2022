@@ -18,10 +18,28 @@ func _ready():
 
 
 func _on_DecisionArea_mouse_entered():
-	self.get_tree().call_group("MouseCards","enter_area",self.decision)
+	self.get_tree().call_group("MouseCards","enter_area",self.decision,self)
 	pass # Replace with function body.
 
 
 func _on_DecisionArea_mouse_exited():
-	self.get_tree().call_group("MouseCards","exit_area")
+	self.get_tree().call_group("MouseCards","exit_area",self)
 	pass # Replace with function body.
+	
+func show_text():
+	$CardFlavour.show()
+	pass
+	
+func hide_text():
+	$CardFlavour.hide()
+	pass
+	
+func set_text(text:String):
+	$CardFlavour.text = text
+	pass
+
+func get_text():
+	return $CardFlavour.text
+	pass
+
+

@@ -9,6 +9,7 @@ var child_cards:Array = []
 var previous_theta:float = 0.0
 var action:String = ""
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -39,15 +40,25 @@ func _process(_delta):
 		deck_cards = []
 		child_cards = []
 
-func enter_area(action_parm:String):
+func enter_area(action_parm:String,caller_node:Node):
 	if len(deck_cards) > 0 :
 		self.action = action_parm
 		self.is_in_area = true
-	
-func exit_area():
+		
+		caller_node.show_text()
+		
+		if action_parm == "left":
+			caller_node.set_text(deck_cards[0].card_left_text)
+		elif action_parm == "right":
+			caller_node.set_text(deck_cards[0].card_left_text)
+		else:
+			print("MouseCards.gd -- Error -- Unexpected action_parm -- ", action_parm)
+
+func exit_area(caller_node:Node):
 	if len(deck_cards) > 0 :
 		self.action = ""
 		self.is_in_area = false
+	caller_node.hide_text()
 	
 
 func new_card_mouse_hover(card:Control,deck_card:Control):

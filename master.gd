@@ -4,6 +4,8 @@ var player_card:PackedScene = preload("res://Card.tscn")
 
 const CARD_CONTAINER_PATH:NodePath = NodePath("PlayerCards/HBoxContainer")
 const NARRATOR:NodePath = NodePath("VBoxContainer/Narrator")
+const DECISION_LEFT:NodePath = NodePath("VBoxContainer/CardSlots/DecisionAreaLeft")
+const DECISION_RIGHT:NodePath = NodePath("VBoxContainer/CardSlots/DecisionAreaRight")
 
 var current_page:Page = null
 
@@ -32,25 +34,37 @@ func update_page(page:Page):
 	var cards_container = self.get_node(self.CARD_CONTAINER_PATH)
 	var narrator = self.get_node(self.NARRATOR)
 	var cards_to_add = []
+	var decision_left = self.get_node(self.DECISION_LEFT)
+	var decision_right = self.get_node(self.DECISION_RIGHT)
 	
+	get_tree().call_group("decisions","hide_text")
 	narrator.clear()
 	narrator.append_text(page.get_story())
 
 	# Remove existing cards
 	for child in cards_container.get_children():
 		child.queue_free()
-		
-	if page == null:
+	
+	print("master.gd -- Initiating Cards ")
+	for page_card in page.get_cards():
 		var card = player_card.instance()
-		card.card_id = "Continue"
-		#TODO : add the continue card textures here
+		card.card_id = page_card.id
+		card.card_left_text  = page_card.left_text
+		card.card_right_text = page_card.right_text
 		cards_container.add_child(card)
-	else:
-		print("master.gd -- Initiating Cards ")
-		for page_card in page.get_cards():
-			var card = player_card.instance()
-			card.card_id = page_card.id
-			cards_container.add_child(card)
-			print("master.gd creating --- ",card.card_id)
+		print("master.gd creating --- ",page_card)
+
+#	if page == null:
+#		var card = player_card.instance()
+#		card.card_id = "Continue"
+#		#TODO : add the continue card textures here
+#		cards_container.add_child(card)
+#	else:
+#		print("master.gd -- Initiating Cards ")
+#		for page_card in page.get_cards():
+#			var card = player_card.instance()
+#			card.card_id = page_card.id
+#			cards_container.add_child(card)
+#			print("master.gd creating --- ",page_card)
 		
 

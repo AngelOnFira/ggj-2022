@@ -52,3 +52,9 @@ script = ExtResource( 4 )
 text_description = "You take your first steps into the forest.
 
  You hear the songs of the birds, the rustling of leaves, the trickling of a nearby creak. It's serene and surreal. It isn't long before you hear a growling. You suddenly feel like you're falling, spinning on your feet. What could it be?"
+
+[node name="EndGame" type="Node" parent="."]
+
+[node name="EndGame" type="Node" parent="EndGame"]
+script = ExtResource( 4 )
+text_description = "The game is over!"

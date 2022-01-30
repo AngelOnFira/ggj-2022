@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/dank_dungeon.ogg-decf68949c48093f5ccd6b30b4458117.oggstr"
+
+[deps]
+
+source_file="res://Assets/Audio/dank_dungeon.ogg"
+dest_files=[ "res://.import/dank_dungeon.ogg-decf68949c48093f5ccd6b30b4458117.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

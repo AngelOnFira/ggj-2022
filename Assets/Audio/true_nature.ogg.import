@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/true_nature.ogg-b37a74a3067ee8a1a91bb68abbfdfa83.oggstr"
+
+[deps]
+
+source_file="res://Assets/Audio/true_nature.ogg"
+dest_files=[ "res://.import/true_nature.ogg-b37a74a3067ee8a1a91bb68abbfdfa83.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -34,6 +34,9 @@ anchor_bottom = 1.0
 texture = ExtResource( 2 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [connection signal="mouse_entered" from="." to="." method="_on_DecisionArea_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_DecisionArea_mouse_exited"]

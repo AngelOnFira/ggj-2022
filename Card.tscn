@@ -1,20 +1,21 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
-[ext_resource path="res://Assets/Sprites/Card/CardCircle.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Sprites/Card/Frame/CardCircle.png" type="Texture" id=1]
 [ext_resource path="res://card.gd" type="Script" id=2]
-[ext_resource path="res://Assets/Sprites/Card/WolfCub.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Sprites/Card/BGBase.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Sprites/Card/WolfCubStars.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Sprites/Card/BGFrame.png" type="Texture" id=6]
-[ext_resource path="res://Assets/Sprites/Card/FrameDecoration.png" type="Texture" id=7]
-[ext_resource path="res://Assets/Sprites/Card/Banner.png" type="Texture" id=8]
-[ext_resource path="res://Assets/Sprites/Card/SwirlDecoration.png" type="Texture" id=9]
-[ext_resource path="res://Assets/Sprites/Card/WolfCubBG.png" type="Texture" id=10]
-[ext_resource path="res://Assets/Sprites/Card/Hunger.jpg" type="Texture" id=11]
-[ext_resource path="res://Assets/Sprites/Card/Continue.jpg" type="Texture" id=12]
-[ext_resource path="res://Assets/Sprites/Card/Family.jpg" type="Texture" id=13]
-[ext_resource path="res://Assets/Sprites/Card/Stablemaster.jpg" type="Texture" id=14]
+[ext_resource path="res://Assets/Sprites/Card/WolfCub/WolfCub.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Sprites/Card/Background/BGBase.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Sprites/Card/WolfCub/WolfCubStars.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Sprites/Card/Background/BGFrame.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Sprites/Card/Decoration/FrameDecoration.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Sprites/Card/Frame/Banner.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Sprites/Card/Decoration/SwirlDecoration.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Sprites/Card/WolfCub/WolfCubBG.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Sprites/Card/NightCafe/Hunger.jpg" type="Texture" id=11]
+[ext_resource path="res://Assets/Sprites/Card/NightCafe/Continue.jpg" type="Texture" id=12]
+[ext_resource path="res://Assets/Sprites/Card/NightCafe/Family.jpg" type="Texture" id=13]
+[ext_resource path="res://Assets/Sprites/Card/NightCafe/Stablemaster.jpg" type="Texture" id=14]
 [ext_resource path="res://Assets/Font/BannerFont.tres" type="DynamicFont" id=15]
+[ext_resource path="res://Assets/Sprites/Card/Child/Child.png" type="Texture" id=16]
 
 [sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
@@ -131,6 +132,7 @@ margin_bottom = 293.0
 mouse_filter = 2
 
 [node name="WolfCub" type="Control" parent="Card"]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
@@ -162,6 +164,29 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 3 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Child" type="Control" parent="Card"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Child" type="TextureRect" parent="Card/Child"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1.046
+margin_top = -1.441
+margin_right = -1.04601
+margin_bottom = -1.44101
+rect_scale = Vector2( 1.01, 1.01 )
+texture = ExtResource( 16 )
 expand = true
 stretch_mode = 1
 __meta__ = {

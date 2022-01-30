@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Continue.jpg-2d6fa7bf2d1b5f11394749618a01705a.stex"
+path="res://.import/Stablemaster.jpg-83eb7fadfa6981255b0507a7b5638317.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Card/Continue.jpg"
-dest_files=[ "res://.import/Continue.jpg-2d6fa7bf2d1b5f11394749618a01705a.stex" ]
+source_file="res://Assets/Sprites/Card/NightCafe/Stablemaster.jpg"
+dest_files=[ "res://.import/Stablemaster.jpg-83eb7fadfa6981255b0507a7b5638317.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Stablemaster.jpg-7efa1d7ffc4705a330c292390e47f892.stex"
+path="res://.import/Bad Wolf Stage 1.png-c36da3f1f32657baa61c6e9684da3cbd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Card/Stablemaster.jpg"
-dest_files=[ "res://.import/Stablemaster.jpg-7efa1d7ffc4705a330c292390e47f892.stex" ]
+source_file="res://Assets/Sprites/Card/Background/Bad Wolf Stage 1.png"
+dest_files=[ "res://.import/Bad Wolf Stage 1.png-c36da3f1f32657baa61c6e9684da3cbd.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/GoodWolf Stage 2.png-41042ec9d2cc6f2fd0dcb6dca72f9072.stex"
+path="res://.import/Fear3B.png-7d2a6726eda536bc297d5c7bd7a4d9bd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Card/GoodWolf Stage 2.png"
-dest_files=[ "res://.import/GoodWolf Stage 2.png-41042ec9d2cc6f2fd0dcb6dca72f9072.stex" ]
+source_file="res://Assets/Sprites/Card/Decoration/Fear3B.png"
+dest_files=[ "res://.import/Fear3B.png-7d2a6726eda536bc297d5c7bd7a4d9bd.stex" ]
 
 [params]
 

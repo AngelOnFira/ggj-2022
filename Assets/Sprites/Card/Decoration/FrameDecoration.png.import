@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/BGBase.png-c00f54352cee717950c86f0ae6e5ab8b.stex"
+path="res://.import/FrameDecoration.png-d4b7ed5c0e99810020b834c4bb1e8b62.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Card/BGBase.png"
-dest_files=[ "res://.import/BGBase.png-c00f54352cee717950c86f0ae6e5ab8b.stex" ]
+source_file="res://Assets/Sprites/Card/Decoration/FrameDecoration.png"
+dest_files=[ "res://.import/FrameDecoration.png-d4b7ed5c0e99810020b834c4bb1e8b62.stex" ]
 
 [params]
 

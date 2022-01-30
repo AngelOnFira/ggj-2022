@@ -17,10 +17,12 @@ var _card_data = {}
 
 var next_page: Node
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	set_card_data()
 	self.add_to_group("pages")
+
 
 # Transitions to the next page specified by the next_page
 func _change_page():
@@ -33,7 +35,9 @@ func _change_page():
 		# If we are at the end of the list, go to the next chapter
 		if next_idx >= self.get_parent().get_child_count():
 			var current_chapter = self.get_parent().get_index()
-			self.next_page = self.get_parent().get_parent().get_child(current_chapter + 1).get_child(0)
+			self.next_page = self.get_parent().get_parent().get_child(current_chapter + 1).get_child(
+				0
+			)
 			print("Next page is null, continuing to next chapter")
 		# Otherwise, go to the next page in the chapter
 		else:
@@ -41,6 +45,7 @@ func _change_page():
 			print("Next page is null, continuing to next page")
 
 	emit_signal("page_changed", self.next_page)
+
 
 # Override to Specify next_page and apply any state logic
 # Side is a string represented as either "left" or "right"
@@ -56,23 +61,34 @@ func take_action(card: String, side: String):
 				self.next_page = get_node_or_null(self.continue_left)
 				print(self.continue_left)
 			elif side == "right":
-				self.next_page =  get_node_or_null(self.continue_right)
+				self.next_page = get_node_or_null(self.continue_right)
 				print(self.continue_right)
 			else:
 				print("error")
 
 	_change_page()
 
+
 # Override to specify unique text based on card state conditions
 func set_card_data():
 	_card_data = {}
 	if len(cards) == 0:
-		_card_data["Continue"] = CardData.new("Continue", "", "", continue_default, continue_default)
+		_card_data["Continue"] = CardData.new(
+			"Continue", "", "", continue_default, continue_default
+		)
 	if len(cards) == 1:
-		_card_data[cards[0]] = CardData.new(cards[0], card_consultations[0][0], card_consultations[0][1], continue_left, continue_right)
-	
+		_card_data[cards[0]] = CardData.new(
+			cards[0],
+			card_consultations[0][0],
+			card_consultations[0][1],
+			continue_left,
+			continue_right
+		)
+
+
 func get_story():
 	return self.text_description
 
+
 func get_cards():
-		return _card_data.values()
+	return _card_data.values()

@@ -1,27 +1,29 @@
 extends Node
 
-var current_page:Page = null
+var current_page: Page = null
+
 
 func _ready():
 	# run_tests()
 
 	pass
 
+
 func run_tests():
 	# Make sure each child has a script, and the expected members
 	for child in self.get_children():
 		print("")
-		
+
 		# Tests to make sure pages are set up right
 		# Check for script
 		# if child.get_script() == null:
 		# 	print("Error! {child} has no script!".format({"child": child.name}))
 		# 	continue
-			
+
 		# Check for cards
 		# if child.cards == []:
 		# 	print("Error! {child} has no cards!".format({"child": child.name}))
-			
+
 		# Check for description
 		# if child.text_description == "":
 		# 	print("Error! {child} has no text_description!".format({"child": child.name}))
@@ -41,16 +43,16 @@ func run_tests():
 	# A chapter the direct child of the story root
 	for chapter in self.get_children():
 		# Pages
-		
+
 		# Start with the first story_element
 		var next_page_name = chapter.get_children()[0].name
 
-	# Loop through the story_elements until there are no more
+		# Loop through the story_elements until there are no more
 		self.current_page = self.find_node(next_page_name)
 
 		# Print the story text
 		print("\t", self.current_page.get_story())
-	
+
 		#Debug
 		# Print each card and the options in those cards
 		if current_page.get_cards() != []:
@@ -60,9 +62,9 @@ func run_tests():
 				print("\t>", card.right_text, "(%s)" % [card.left_pointer])
 				print("")
 
-		
-		
 		# XXX: Debug; Goto the next page in the story, regardless of choice
+
+
 #		if next_page_name == "":
 #			# Get current page index
 #			var current_page_index = chapter.get_children().find(current_page)
@@ -74,11 +76,11 @@ func run_tests():
 #			else:
 #				# There is no next page, so we are done
 #				break
-			
 
-		# Slow down so we can see all the debug text without Godot clipping
-		# it
+# Slow down so we can see all the debug text without Godot clipping
+# it
 #		yield(get_tree().create_timer(0.05), "timeout")
+
 
 # Get the initial page of the story, and set it internally
 func initial_page():

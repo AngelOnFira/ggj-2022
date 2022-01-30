@@ -25,6 +25,7 @@ text_description = "You feel the warmth of the sun overhead as it comes up over 
 [node name="EdgeForest" type="Node" parent="LeavingTown"]
 script = ExtResource( 4 )
 text_description = "You stand at the edge of the forest, looking both ways and seeing it stretch out forever. A chill runs up your back, sweat finds its way to your brow. You look through your bags one last time, \"Do I need to go back? Did I forget something,\" you ask yourself. Food, locket, water, teas, a bedroll, some camping equipment. You're all set, but you feel so unprepared."
+card_consultations = [ [ "", "" ] ]
 continue_left = NodePath("../ForestFear")
 continue_right = NodePath("../ForestCurious")
 

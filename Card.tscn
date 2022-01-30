@@ -89,6 +89,12 @@ __meta__ = {
 [node name="Banner" type="TextureRect" parent="Frame"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 223.0
+margin_top = 571.0
+margin_right = 223.0
+margin_bottom = 571.0
+rect_rotation = 179.959
+rect_scale = Vector2( 1.4, 1.3 )
 texture = ExtResource( 8 )
 expand = true
 stretch_mode = 1

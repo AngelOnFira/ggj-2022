@@ -27,8 +27,8 @@ text_description = "Leaving the village boundaries, you feel flush. You aren't s
 
 [node name="Family" type="Node" parent="Boundaries"]
 script = ExtResource( 3 )
-left_text = " It felt weird`"
-right_text = " It felt right`"
+left_text = "It felt weird"
+right_text = "It felt right"
 continue_left = NodePath("../../GoodReason")
 continue_right = NodePath("../../NewHorizons")
 
@@ -49,8 +49,8 @@ text_description = "You stand at the edge of the forest, looking both ways and s
 
 [node name="Child" type="Node" parent="ForestEdge"]
 script = ExtResource( 3 )
-left_text = " 'I was afraid"
-right_text = " 'I was curious"
+left_text = "I was afraid"
+right_text = "I was curious"
 continue_left = NodePath("../../ForestAfraid")
 continue_right = NodePath("../../ForestCurious")
 
@@ -112,8 +112,8 @@ text_description = "You see the eyes peering out from the trees. You feel vulner
 
 [node name="Child" type="Node" parent="Howl"]
 script = ExtResource( 3 )
-left_text = " It terrified me'"
-right_text = " Was it friendly?'"
+left_text = "It terrified me"
+right_text = "Was it friendly?"
 continue_left = NodePath("../../Terrified")
 continue_right = NodePath("../../Curious")
 
@@ -134,8 +134,8 @@ text_description = "You see the wolf cub come out of the forest, eyes wide with 
 
 [node name="Stablemaster" type="Node" parent="WolfCub"]
 script = ExtResource( 3 )
-left_text = " I gave some food.'"
-right_text = " I quickly ate.'"
+left_text = "I gave some food."
+right_text = "I quickly ate."
 continue_left = NodePath("../../FeedWolf")
 continue_right = NodePath("../../FeedSelf")
 
@@ -217,8 +217,8 @@ text_description = "Or… had they? You hear the click-clacking of hooves, the j
 
 [node name="Cub" type="Node" parent="Hooves"]
 script = ExtResource( 3 )
-left_text = " I was ready to fight.'"
-right_text = " I was ready to protect.'"
+left_text = "I was ready to fight."
+right_text = "I was ready to protect."
 continue_left = NodePath("../../Fight")
 continue_right = NodePath("../../Protect")
 
@@ -260,15 +260,15 @@ You close your eyes again, unsure of how to continue.
 
 [node name="Cub" type="Node" parent="CryOut"]
 script = ExtResource( 3 )
-left_text = " My friend attacked.' "
-right_text = " My friend stood guard before me.' "
+left_text = "My friend attacked."
+right_text = "My friend stood guard before me."
 continue_left = NodePath("../../ CubAttack")
 continue_right = NodePath("../../ CubProtect")
 
 [node name="Family" type="Node" parent="CryOut"]
 script = ExtResource( 3 )
-left_text = " I couldn't part with my locket.' "
-right_text = " I was ready to give up that part of me.' "
+left_text = "I couldnt part with my locket."
+right_text = "I was ready to give up that part of me."
 continue_left = NodePath("../../ KeepLocket")
 continue_right = NodePath("../../ GiveLocket")
 
@@ -300,8 +300,8 @@ text_description = "The mules begin to walk past you and toward the village, som
 
 [node name="Cub" type="Node" parent="Mules"]
 script = ExtResource( 3 )
-left_text = " I took a sword from the ground.'"
-right_text = " I hid the weapons in a bush.'"
+left_text = "I took a sword from the ground."
+right_text = "I hid the weapons in a bush."
 continue_left = NodePath("../../TakeSword")
 continue_right = NodePath("../../HideSword")
 
@@ -346,8 +346,8 @@ text_description = "The music continues, but suddenly it stops sounding just lik
 
 [node name="Stablemaster" type="Node" parent="Music"]
 script = ExtResource( 3 )
-left_text = " I quieted the cub.'"
-right_text = " I comforted the cub.'"
+left_text = "I quieted the cub."
+right_text = "I comforted the cub."
 continue_left = NodePath("../../QuietCub")
 continue_right = NodePath("../../ComfortWolf")
 
@@ -369,8 +369,8 @@ text_description = "You see the source of the music wandering toward - a lone cl
 
 [node name="Family" type="Node" parent="MusicSource"]
 script = ExtResource( 3 )
-left_text = " I tried to hide from the stranger.'"
-right_text = " I waved to the stranger.'"
+left_text = "I tried to hide from the stranger."
+right_text = "I waved to the stranger."
 continue_left = NodePath("../../Hide")
 continue_right = NodePath("../../Wave")
 
@@ -409,15 +409,15 @@ It's impossible not to notice that one of the wares is moving! At first glance i
 
 [node name="Stablemaster" type="Node" parent="Offers"]
 script = ExtResource( 3 )
-left_text = " I reached for the collar and leash.'"
-right_text = " I thought my friend deserved a nice meaty treat.'"
+left_text = "I reached for the collar and leash."
+right_text = "I thought my friend deserved a nice meaty treat."
 continue_left = NodePath("../../Leash")
 continue_right = NodePath("../../Treat")
 
 [node name="Child" type="Node" parent="Offers"]
 script = ExtResource( 3 )
-left_text = " The sight was so overwhelming, I backed away.'"
-right_text = " I reached out to help the struggling mouse.'"
+left_text = "The sight was so overwhelming, I backed away."
+right_text = "I reached out to help the struggling mouse."
 continue_left = NodePath("../../Nothing")
 continue_right = NodePath("../../GetMouse")
 
@@ -478,15 +478,15 @@ It wants to help with your journey. You feel throughout your whole body that it 
 
 [node name="Child" type="Node" parent="ReachOut"]
 script = ExtResource( 3 )
-left_text = " I was afraid of the fountain.'"
-right_text = " We both hopped into the fountain together.'"
+left_text = "I was afraid of the fountain."
+right_text = "We both hopped into the fountain together."
 continue_left = NodePath("../../CampFear")
 continue_right = NodePath("../../TogetherCub")
 
 [node name="Family" type="Node" parent="ReachOut"]
 script = ExtResource( 3 )
-left_text = " I set up camp beside the fountain.'"
-right_text = " I tossed my locket into the fountain.'"
+left_text = "I set up camp beside the fountain."
+right_text = "I tossed my locket into the fountain."
 continue_left = NodePath("../../CampCub")
 continue_right = NodePath("../../PlaceLocket")
 
@@ -860,15 +860,15 @@ Your mouse friend reaches out, interested in cleaning off the cheese coating she
 
 [node name="Child" type="Node" parent="ReachOutMouse"]
 script = ExtResource( 3 )
-left_text = " I tossed the smelly mouse into the water from afar.'"
-right_text = " We all hopped into the fountain together.'"
+left_text = "I tossed the smelly mouse into the water from afar."
+right_text = "We all hopped into the fountain together."
 continue_left = NodePath("../../TossMouse")
 continue_right = NodePath("../../TogetherMouse")
 
 [node name="Family" type="Node" parent="ReachOutMouse"]
 script = ExtResource( 3 )
-left_text = " I set up camp beside the fountain.'"
-right_text = " I tossed my locket into the fountain.'"
+left_text = "I set up camp beside the fountain."
+right_text = "I tossed my locket into the fountain."
 continue_left = NodePath("../../CampMouse")
 continue_right = NodePath("../../PlaceLocketMouse")
 

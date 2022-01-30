@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://DecisionArea.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Sprites/Card/Decoration/SwirlDecoration.png" type="Texture" id=2]
@@ -11,6 +11,38 @@ _data = [ Vector2( 0.0026455, -0.172727 ), 0.0, 1.46144, 0, 1, Vector2( 0.232804
 [sub_resource type="Gradient" id=2]
 offsets = PoolRealArray( 0, 0.214085, 0.36338, 0.676056, 0.870423, 1 )
 colors = PoolColorArray( 0, 0, 0, 1, 1, 1, 1, 1, 0.345098, 0.6, 0.67451, 1, 0.345098, 0.6, 0.67451, 1, 1, 1, 1, 1, 0, 0, 0, 1 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "Pulse"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
 
 [node name="DecisionArea" type="Control" groups=["decisions"]]
 anchor_right = 1.0
@@ -76,6 +108,10 @@ radial_accel_random = 0.55
 angle_random = 0.42
 scale_amount_random = 0.82
 color_ramp = SubResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Pulse = SubResource( 3 )
+anims/RESET = SubResource( 4 )
 
 [connection signal="mouse_entered" from="." to="." method="_on_DecisionArea_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_DecisionArea_mouse_exited"]

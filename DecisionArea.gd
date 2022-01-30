@@ -3,15 +3,21 @@ extends Control
 export var decision: String = "default"
 var showing_text = false
 
+func _process(delta):
+	if !showing_text:
+		self.get_node("CPUParticles2D").emitting = false
+		$AnimationPlayer.stop()
 
 func _on_DecisionArea_mouse_entered():
 	self.get_tree().call_group("MouseCards", "enter_area", self.decision, self)
-	self.get_node("CPUParticles2D").emitting = true
+	if showing_text:
+		self.get_node("CPUParticles2D").emitting = true
+		$AnimationPlayer.play("Pulse")
 
 
 func _on_DecisionArea_mouse_exited():
 	self.get_tree().call_group("MouseCards", "exit_area", self)
-	self.get_node("CPUParticles2D").emitting = false
+
 
 
 func show_text():

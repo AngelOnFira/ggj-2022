@@ -1,14 +1,72 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://DecisionArea.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Sprites/Card/Decoration/SwirlDecoration.png" type="Texture" id=2]
 
+[sub_resource type="Curve" id=1]
+min_value = -0.5
+max_value = 0.5
+_data = [ Vector2( 0.0026455, -0.172727 ), 0.0, 1.46144, 0, 1, Vector2( 0.232804, 0.163636 ), 0.0, 0.0, 0, 0, Vector2( 0.505291, -0.154545 ), 0.0, 0.0, 0, 0, Vector2( 0.71164, 0.1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), -0.346789, 0.0, 1, 0 ]
+
+[sub_resource type="Gradient" id=2]
+offsets = PoolRealArray( 0, 0.214085, 0.36338, 0.676056, 0.870423, 1 )
+colors = PoolColorArray( 0, 0, 0, 1, 1, 1, 1, 1, 0.345098, 0.6, 0.67451, 1, 0.345098, 0.6, 0.67451, 1, 1, 1, 1, 1, 0, 0, 0, 1 )
+
+[sub_resource type="Animation" id=5]
+resource_name = "Idle"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Pulse"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 1.9 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
 [node name="DecisionArea" type="Control" groups=["decisions"]]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = -1024.0
-margin_bottom = -600.0
+margin_right = -724.0
+margin_bottom = -200.0
 rect_min_size = Vector2( 300, 400 )
+rect_pivot_offset = Vector2( -332, -21 )
 size_flags_horizontal = 3
 script = ExtResource( 1 )
 __meta__ = {
@@ -25,11 +83,14 @@ margin_top = -134.5
 margin_right = 70.0
 margin_bottom = 134.5
 rect_min_size = Vector2( 120, 200 )
+custom_colors/font_color_shadow = Color( 0.12549, 0.0862745, 0.25098, 1 )
+custom_constants/shadow_as_outline = 40
 text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 align = 1
 valign = 1
 autowrap = true
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -40,8 +101,34 @@ texture = ExtResource( 2 )
 expand = true
 stretch_mode = 6
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2( 151, 319 )
+emitting = false
+amount = 68
+lifetime = 2.5
+explosiveness = 0.09
+randomness = 0.05
+lifetime_randomness = 0.2
+emission_shape = 2
+emission_rect_extents = Vector2( 107.838, 16.699 )
+direction = Vector2( 0, 0 )
+gravity = Vector2( 0, -100 )
+angular_velocity = 301.22
+angular_velocity_random = 0.65
+orbit_velocity_curve = SubResource( 1 )
+radial_accel_random = 0.55
+angle_random = 0.42
+scale_amount_random = 0.82
+color_ramp = SubResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Idle = SubResource( 5 )
+anims/Pulse = SubResource( 3 )
+anims/RESET = SubResource( 4 )
 
 [connection signal="mouse_entered" from="." to="." method="_on_DecisionArea_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_DecisionArea_mouse_exited"]

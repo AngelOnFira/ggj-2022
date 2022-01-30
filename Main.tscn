@@ -17,6 +17,14 @@ __meta__ = {
 
 [node name="Story" parent="." instance=ExtResource( 8 )]
 
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1026.0
+margin_bottom = 602.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="MouseCards" type="Node2D" parent="." groups=["MouseCards"]]
 script = ExtResource( 4 )
 

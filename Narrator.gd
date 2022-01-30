@@ -7,7 +7,6 @@ var culmitive_delta: float = 0.0
 export var update_speed: float = 0
 var current_index_in_text_to_add: int = 0
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass  # Replace with function body.

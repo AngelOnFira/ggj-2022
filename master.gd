@@ -24,6 +24,7 @@ func card_action(action: String, card: String):
 	self.current_page.take_action(card, action)
 	pass
 
+# Rebuild the scene with a new page
 func update_page(page:Page):
 	self.current_page = page
 	var cards_container = self.get_node(self.CARD_CONTAINER_PATH)
@@ -32,7 +33,10 @@ func update_page(page:Page):
 	var decision_left = self.get_node(self.DECISION_LEFT)
 	var decision_right = self.get_node(self.DECISION_RIGHT)
 	
+	# Reset the text on each of the decision boxes
 	get_tree().call_group("decisions","hide_text")
+
+	# Reset the narrator
 	narrator.clear()
 	narrator.append_text(page.get_story())
 
@@ -40,6 +44,7 @@ func update_page(page:Page):
 	for child in cards_container.get_children():
 		child.queue_free()
 	
+	# Add new cards
 	print("master.gd -- Initiating Cards ")
 	for page_card in page.get_cards():
 		var card = player_card.instance()

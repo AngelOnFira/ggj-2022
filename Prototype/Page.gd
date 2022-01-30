@@ -32,10 +32,13 @@ func _change_page():
 
 		# If we are at the end of the list, go to the next chapter
 		if next_idx >= self.get_parent().get_child_count():
-			next_idx = 0
-			# TODO: Go to next chapter instead of looping to index 0
-
-		self.next_page = self.get_parent().get_child(next_idx)
+			var current_chapter = self.get_parent().get_index()
+			self.next_page = self.get_parent().get_parent().get_child(current_chapter + 1).get_child(0)
+			print("Next page is null, continuing to next chapter")
+		# Otherwise, go to the next page in the chapter
+		else:
+			self.next_page = self.get_parent().get_child(next_idx)
+			print("Next page is null, continuing to next page")
 
 	emit_signal("page_changed", self.next_page)
 
@@ -43,18 +46,18 @@ func _change_page():
 # Side is a string represented as either "left" or "right"
 func take_action(card: String, side: String):
 	# If we have no cards
-	if len(cards) == 0 and continue_left != null and continue_right != null:
+	if len(cards) == 0 and self.continue_left != null and self.continue_right != null:
 		# If continue_default is set (making a jump to a new page)
 		if continue_default:
-			next_page = get_node_or_null(continue_default)
+			self.next_page = get_node_or_null(self.continue_default)
 		# Otherwise, left and right should be set
 		else:
 			if side == "left":
-				next_page = get_node_or_null(continue_left)
-				print(continue_left)
+				self.next_page = get_node_or_null(self.continue_left)
+				print(self.continue_left)
 			elif side == "right":
-				next_page =  get_node_or_null(continue_right)
-				print(continue_right)
+				self.next_page =  get_node_or_null(self.continue_right)
+				print(self.continue_right)
 			else:
 				print("error")
 

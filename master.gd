@@ -9,12 +9,23 @@ const DECISION_RIGHT: NodePath = NodePath("VBoxContainer/CardSlots/DecisionAreaR
 
 var current_page: Page = null
 
+var balances = {
+	"Child": 0,
+	"Family": 0,
+	"Stablemaster": 0,
+	"Cub": 0,
+	"Continue":0
+}
+var child_balance = 0
+var stable_balance = 0
+var family_balance = 0
+var cub_balance = 0
 
 func _ready():
 	for page in self.get_tree().get_nodes_in_group("pages"):
 		page.connect("page_changed", self, "update_page")
 		page.connect("action_taken", $SFXHandler, "play")
-		page.connect("action_taken", $CardModifier, "update_card")
+		page.connect("action_taken", self, "set_card_balance")
 
 	# Start the game by getting the first page
 	self.update_page($Story.initial_page())
@@ -62,7 +73,7 @@ func update_page(page: Page):
 		card.rect_scale = Vector2(0.5, 0.5)
 
 		# Set the art on the card
-		card.set_card_type(card.card_id)
+		card.set_card_type(card.card_id, balances[card.card_id])
 
 		print("master.gd creating --- ", page_card)
 
@@ -78,3 +89,10 @@ func update_page(page: Page):
 #			card.card_id = page_card.id
 #			cards_container.add_child(card)
 #			print("master.gd creating --- ",page_card)
+
+
+func set_card_balance(page, card, side):
+	if side == "left":
+		balances[card] -= 1
+	if side == "right":
+		balances[card] +=1

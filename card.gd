@@ -27,14 +27,20 @@ func _on_Card_gui_input(event):
 
 
 # Set the type (id) of card to change the art
-func set_card_type(id: String):
+func set_card_type(id: String, balance: int):
 	# Hide all the children
-	for child in $Card.get_children():
+	for child in $Cards.get_children():
 		child.hide()
 
 	print("Trying to show ", id)
 
 	# Show the requested child
-	$Card.get_node(id).show()
+	var active_card = $Cards.get_node(id)
+	for child in active_card.get_children():
+		child.hide()
+
+	var new_balance = String(clamp(balance, -3, 3))
+	active_card.get_node(new_balance).show()
+	active_card.show()
 
 	$TextContainer/VBoxContainer/BannerText.text = id

@@ -1,18 +1,10 @@
 extends Node2D
 
 var is_in_area: bool = false
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 var deck_cards: Array = []
 var child_cards: Array = []
 var previous_theta: float = 0.0
 var action: String = ""
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass  # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -43,23 +35,14 @@ func enter_area(action_parm: String, caller_node: Node):
 		self.action = action_parm
 		self.is_in_area = true
 
-		caller_node.show_text()
-
-		if action_parm == "left":
-			caller_node.set_text(deck_cards[0].card_left_text)
-		elif action_parm == "right":
-			caller_node.set_text(deck_cards[0].card_left_text)
-		else:
-			print("MouseCards.gd -- Error -- Unexpected action_parm -- ", action_parm)
-
 
 func exit_area(caller_node: Node):
 	if len(deck_cards) > 0:
 		self.action = ""
 		self.is_in_area = false
-	caller_node.hide_text()
 
 
+# A card has just been picked up
 func new_card_mouse_hover(card: Control, deck_card: Control):
 	card.set_position(Vector2(-card.get_rect().size.x / 2, -card.get_rect().size.y / 2))
 	self.deck_cards.append(deck_card)
@@ -67,3 +50,15 @@ func new_card_mouse_hover(card: Control, deck_card: Control):
 	self.add_child(card)
 	self.action = ""
 	self.is_in_area = false
+
+	print(card.card_left_text)
+	print(card.card_right_text)
+
+	# Set the text on the decisions
+	var left_decision = get_parent().get_node("VBoxContainer/CardSlots/DecisionAreaLeft")
+	left_decision.set_text(card.card_left_text)
+	left_decision.show_text()
+
+	var right_decision = get_parent().get_node("VBoxContainer/CardSlots/DecisionAreaRight")
+	right_decision.set_text(card.card_right_text)
+	right_decision.show_text()

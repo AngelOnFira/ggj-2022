@@ -71,19 +71,35 @@ func take_action(card: String, side: String):
 
 # Override to specify unique text based on card state conditions
 func set_card_data():
-	_card_data = {}
-	if len(cards) == 0:
-		_card_data["Continue"] = CardData.new(
-			"Continue", "", "", continue_default, continue_default
+	self._card_data = {}
+
+	# If there are no cards, and no consultations, we just use the continue card
+	if len(self.cards) == 0 and len(self.card_consultations) == 0:
+		self._card_data["Continue"] = CardData.new(
+			"Continue", "Go on...", "Go on...", self.continue_default, self.continue_default
 		)
-	if len(cards) == 1:
-		_card_data[cards[0]] = CardData.new(
-			cards[0],
-			card_consultations[0][0],
-			card_consultations[0][1],
-			continue_left,
-			continue_right
+
+	# If there are no cards, and one consultations, we just use the continue card
+	if len(self.cards) == 0 and len(self.card_consultations) == 1:
+		self._card_data["Continue"] = CardData.new(
+			"Continue",
+			self.card_consultations[0][0],  # The left action
+			self.card_consultations[0][1],  # The right action
+			self.continue_default,
+			self.continue_default
 		)
+
+	# If there are cards, we rely on
+	if len(self.cards) == 1:
+		self._card_data[cards[0]] = CardData.new(
+			self.cards[0],
+			self.card_consultations[0][0],  # The left action
+			self.card_consultations[0][1],  # The right action
+			self.continue_left,
+			self.continue_right
+		)
+
+	# If there is more than one card, TODO
 
 
 func get_story():
@@ -91,4 +107,7 @@ func get_story():
 
 
 func get_cards():
-	return _card_data.values()
+	print("card data")
+	for card in self._card_data:
+		print(card, " ", _card_data[card].print_data())
+	return self._card_data.values()

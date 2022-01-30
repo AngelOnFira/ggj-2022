@@ -55,6 +55,7 @@ func update_page(page: Page):
 		card.card_left_text = page_card.left_text
 		card.card_right_text = page_card.right_text
 		cards_container.add_child(card)
+		card.rect_scale = Vector2(0.5, 0.5)
 		print("master.gd creating --- ", page_card)
 
 #	if page == null:

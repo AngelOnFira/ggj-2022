@@ -3,7 +3,7 @@
 [ext_resource path="res://DecisionArea.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Sprites/Card/SwirlDecoration.png" type="Texture" id=2]
 
-[node name="DecisionArea" type="Control"]
+[node name="DecisionArea" type="Control" groups=["decisions"]]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_right = -1024.0
@@ -11,6 +11,19 @@ margin_bottom = -600.0
 rect_min_size = Vector2( 0, 100 )
 size_flags_horizontal = 3
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CardFlavour" type="Label" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -33.5
+margin_right = 33.5
+margin_bottom = 14.0
+text = "Temp Text"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }

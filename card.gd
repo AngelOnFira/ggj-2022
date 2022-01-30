@@ -1,6 +1,8 @@
 extends PanelContainer
 
 export var card_id:String = "default"
+export var card_left_text:String = ""
+export var card_right_text:String = ""
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
